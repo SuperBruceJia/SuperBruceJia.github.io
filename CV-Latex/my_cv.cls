@@ -52,7 +52,7 @@
   \hfill
   \makebox[0pt][c]{\Telefon\ #2} 
   \hfill
-   \makebox[0pt][c]{\linkedin\ #3} 
+   \makebox[0pt][c]{\Mundus\ #3} 
   \hfill
   \makebox[0pt][c]{\github\ #4} \quad \quad \quad \quad \quad \quad \quad \quad
    \hfill
