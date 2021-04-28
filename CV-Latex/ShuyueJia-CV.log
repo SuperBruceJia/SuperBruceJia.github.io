@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.4)  28 APR 2021 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.4)  28 APR 2021 18:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -696,16 +696,16 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+mvs on input line 13.
+LaTeX Font Info:    Trying to load font information for U+mvs on input line 11.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/marvosym/umvs.fd)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 13.
+(Font)              <7> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 13.
+(Font)              <5> on input line 11.
 
-Overfull \hbox (6.61858pt too wide) in paragraph at lines 48--48
+Overfull \hbox (6.61858pt too wide) in paragraph at lines 46--46
 [][]\OT1/cmr/m/n/10 Medical NER[]: com-pared the per-for-mances of dif-fer-ent 
 mod-els $\OMS/cmsy/m/n/10 !$ \OT1/cmr/m/n/10 CRF++, Character-level BiL-STM + C
 RF, Character-
@@ -741,7 +741,7 @@ texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ShuyueJia-CV.pdf (2 pages, 178049 bytes).
+Output written on ShuyueJia-CV.pdf (2 pages, 178030 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  134 compressed objects within 2 object streams
