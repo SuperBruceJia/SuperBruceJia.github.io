@@ -48,13 +48,13 @@
 %  \hfill %
   
   \par\nopagebreak
-  \makebox[0pt][l]{\Letter\ #1} \quad \quad \quad \quad \quad \quad
+  \makebox[0pt][l]{\Letter\ #1} \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad
   \hfill
-  \makebox[0pt][c]{\Telefon\ #2} 
+  \makebox[0pt][c]{\Telefon\ #2} \quad \quad \quad \quad \quad \quad
   \hfill
-   \makebox[0pt][c]{\Mundus\ #3} 
+   \makebox[0pt][c]{\github\ #3} 
   \hfill
-  \makebox[0pt][c]{\github\ #4} \quad \quad \quad \quad \quad \quad \quad \quad
+  \makebox[0pt][c]{\Mundus\ #4} \quad \quad \quad \quad \quad \quad
    \hfill
   \makebox[0pt][r]{\Mundus\ #5}
   \par
