@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.4)  16 MAY 2021 20:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.4)  17 MAY 2021 16:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -714,10 +714,6 @@ RF, Character-
 [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 129--139
-
- []
-
 [2] (./ShuyueJia-CV.aux)
 Package rerunfilecheck Info: File `ShuyueJia-CV.out' has not changed.
 (rerunfilecheck)             Checksum: F13F9C5929DBE068F8586EBB8A98B357;2551.
@@ -744,7 +740,7 @@ l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local
 /texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/
 texlive/2021/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ShuyueJia-CV.pdf (2 pages, 171815 bytes).
+Output written on ShuyueJia-CV.pdf (2 pages, 171817 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  138 compressed objects within 2 object streams
