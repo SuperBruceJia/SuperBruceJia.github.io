@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.4)  27 MAY 2021 14:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.4)  3 JUN 2021 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -705,7 +705,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 11.
 
-Overfull \hbox (6.61858pt too wide) in paragraph at lines 50--50
+Overfull \hbox (6.61858pt too wide) in paragraph at lines 49--49
 [][]\OT1/cmr/m/n/10 Medical NER[]: com-pared the per-for-mances of dif-fer-ent 
 mod-els $\OMS/cmsy/m/n/10 !$ \OT1/cmr/m/n/10 CRF++, Character-level BiL-STM + C
 RF, Character-
@@ -714,15 +714,19 @@ RF, Character-
 [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 127--137
+
+ []
+
 [2] (./ShuyueJia-CV.aux)
 Package rerunfilecheck Info: File `ShuyueJia-CV.out' has not changed.
-(rerunfilecheck)             Checksum: F13F9C5929DBE068F8586EBB8A98B357;2551.
+(rerunfilecheck)             Checksum: E7C0CCC897666C7083C6E870B3D4B461;2326.
  ) 
 Here is how much of TeX's memory you used:
- 19543 strings out of 478994
- 357301 string characters out of 5858185
- 673199 words of memory out of 5000000
- 36702 multiletter control sequences out of 15000+600000
+ 19541 strings out of 478994
+ 357281 string characters out of 5858185
+ 674199 words of memory out of 5000000
+ 36701 multiletter control sequences out of 15000+600000
  407171 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,5n,130p,490b,668s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -740,10 +744,10 @@ l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local
 /texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/
 texlive/2021/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ShuyueJia-CV.pdf (2 pages, 171819 bytes).
+Output written on ShuyueJia-CV.pdf (2 pages, 165730 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
- 16 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
+ 15 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
