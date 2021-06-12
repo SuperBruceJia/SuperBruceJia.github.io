@@ -42,21 +42,23 @@
     {\large\Large\Letter} #4 \ {\Large\Telefon} #5 }
 }
 
-\newcommand{\longcontact}[5]{% <--- don't forget
+\newcommand{\longcontact}[6]{% <--- don't forget
 %  \par % be sure to start a new line
 %  \makebox[0pt][l]{\Gentsroom\ #1}
 %  \hfill %
   
   \par\nopagebreak
-  \makebox[0pt][l]{\Letter\ #1} \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad
+  \makebox[0pt][l]{\Letter\ #1} \quad \quad \quad \quad  \quad \quad \quad \quad \quad 
   \hfill
-  \makebox[0pt][c]{\Telefon\ #2} \quad \quad \quad \quad \quad \quad
+  \makebox[0pt][c]{\Telefon\ #2} \quad \quad
   \hfill
-   \makebox[0pt][c]{\github\ #3} 
+   \makebox[0pt][c]{\github\ #3} \quad \quad
   \hfill
-  \makebox[0pt][c]{\Mundus\ #4} \quad \quad \quad \quad \quad \quad
+  \makebox[0pt][c]{\github\ #4} \quad 
+  \hfill
+  \makebox[0pt][c]{\Mundus\ #5} \quad \quad \quad \quad \quad
    \hfill
-  \makebox[0pt][r]{\Mundus\ #5}
+  \makebox[0pt][r]{\Mundus\ #6}
   \par
 }
 
