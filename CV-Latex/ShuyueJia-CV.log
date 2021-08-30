@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.4)  13 JUN 2021 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.4)  30 AUG 2021 20:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -715,20 +715,14 @@ RF, Character-
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] (./ShuyueJia-CV.aux)
-
-Package rerunfilecheck Warning: File `ShuyueJia-CV.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ShuyueJia-CV.out':
-(rerunfilecheck)             Before: B507A6A10456AFA18E0B5B879B9FEE91;2252
-(rerunfilecheck)             After:  E7C0CCC897666C7083C6E870B3D4B461;2326.
+Package rerunfilecheck Info: File `ShuyueJia-CV.out' has not changed.
+(rerunfilecheck)             Checksum: E7C0CCC897666C7083C6E870B3D4B461;2326.
  ) 
 Here is how much of TeX's memory you used:
- 19540 strings out of 478994
- 357270 string characters out of 5858185
+ 19541 strings out of 478994
+ 357281 string characters out of 5858185
  681384 words of memory out of 5000000
- 36700 multiletter control sequences out of 15000+600000
+ 36701 multiletter control sequences out of 15000+600000
  407171 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,5n,130p,490b,668s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -746,10 +740,10 @@ l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local
 /texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/
 texlive/2021/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ShuyueJia-CV.pdf (2 pages, 165814 bytes).
+Output written on ShuyueJia-CV.pdf (2 pages, 165757 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
+ 152 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
  15 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
