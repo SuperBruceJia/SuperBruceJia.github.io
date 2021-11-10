@@ -92,10 +92,9 @@ hr{border:0;height:0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px soli
 	height: 260px;
 	width: 390px;
 	position: relative;
-	margin: 0 0 0 0;
 	float: right;
-	border-radius: 10%}
-.content .profile-picture{padding:0; margin:0}
+	border-radius: 15%}
+.content .profile-picture{padding:0; margin:0px 5px 15px 18px}
 
 @media (max-width: 500px){.content .profile-picture img{margin-top:5px}}
 .content img{
