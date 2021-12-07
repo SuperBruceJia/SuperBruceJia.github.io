@@ -93,7 +93,7 @@ hr{border:0;height:0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px soli
 	width: 250px;
 	position: relative;
 	float: right;
-	border-radius: 30%}
+	border-radius: 12%}
 .content .profile-picture{padding:10px; margin:0px 10px 10px 10px}
 
 @media (max-width: 500px){.content .profile-picture img{margin-top:0px}}
