@@ -11,4 +11,4 @@
     #echo $matches[1][0]."<br>";
 echo " <a href=https://scholar.google.com/scholar?oi=bibs&hl=en&cites=".$paperid."&as_sdt=5 target=_blank> ". $matches[1][0]."</a> ";
     }
-    ?>
+?>

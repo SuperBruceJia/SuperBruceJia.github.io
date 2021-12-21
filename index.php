@@ -95,13 +95,17 @@
   
   <br>
   
-  <a href="https://scholar.google.com/citations?user=PfpEP60AAAAJ&hl=en&authuser=1"><i class="ai ai-google-scholar-square ai-1x"></i> Scholar</a> &nbsp
+  <a href="https://scholar.google.com/citations?user=PfpEP60AAAAJ&hl=en&authuser=1"><i class="ai ai-google-scholar-square ai-1x"></i> Scholar Citations</a>
+  <?php $lang="en"; $userid="PfpEP60AAAAJ"; $pagesize="100"; include 'css/curl.php'; ?>
+  <?php include 'css/citation_chart.php'; ?> 
+  &nbsp
+  
   <a href="./CV-Latex/ShuyueJia-CV.pdf"> <i class="fab fa fa-file-pdf-o"></i> Résumé</a> &nbsp
   <a href="https://github.com/SuperBruceJia"><i class="fab fa fa-github"></i> GitHub</a> 
   <iframe src="https://img.shields.io/github/followers/SuperBruceJia?label=follow&style=social" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
   <iframe src="https://img.shields.io/github/stars/SuperBruceJia?label=stars&style=social" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>&nbsp
 </p>
-
+  
 <!--Latest News-->
 <h2 id="news">News</h2>
 
