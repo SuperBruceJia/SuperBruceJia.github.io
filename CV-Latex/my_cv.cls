@@ -11,7 +11,7 @@
 	 left=15mm,
 	 right=15mm,
 	 top=15mm,
-	 bottom=20mm,
+	 bottom=15mm,
 }
 
 \RequirePackage{tikz}
