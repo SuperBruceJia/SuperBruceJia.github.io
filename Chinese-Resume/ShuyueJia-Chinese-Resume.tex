@@ -44,7 +44,6 @@
 \newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}  %六号
 \newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}    %七号
 
-
 %\usepackage{fontawesome}
 % \setCJKmainfont[BoldFont={WenQuanYi Micro Hei/Bold}]{WenQuanYi Micro Hei}
 %\defaultfontfeatures{Mapping=tex-text}
@@ -57,7 +56,7 @@
 % character encoding
 
 % adjust the page margins
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.918]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 \AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
@@ -101,26 +100,37 @@
 
 \section{工作经历}
 \cventry{21.09-22.04}{香港城市大学, 香港}{研究助理}{}{}{}
-\cvlistitem{\href{https://shuyuej.com/files/Model-Compression-Acceleration.pdf}{模型部署}: 调研了深度学习模型压缩与轻量化的基础知识, 以及移动端设备部署模型的开源框架。}
+%\cvlistitem{\href{https://shuyuej.com/files/Model-Compression-Acceleration.pdf}{图像质量评估}: }
+\cvlistitem{\href{https://shuyuej.com/files/Model-Compression-Acceleration.pdf}{模型部署}: 调研深度学习模型压缩与轻量化的基础知识、移动端设备部署模型的开源框架。}
 
 \cventry{20.10-20.12}{腾讯视频, 北京}{推荐系统实习生}{}{}{}
-\cvlistitem{统一架构: 协助师兄做好腾讯视频统一架构中重排模块的部分工作。}
-\cvlistitem{\href{https://shuyuej.com/files/Dynamic-GCN-Survey.pdf}{学术调研}: 调研了动态图卷积神经网络模型, 学习了基础的强化学习算法。}
-  
+\cvlistitem{统一架构: 协助同事做好腾讯视频统一架构中重排模块的部分工作。}
+\cvlistitem{\href{https://shuyuej.com/files/Dynamic-GCN-Survey.pdf}{学术调研}: 调研动态图卷积神经网络模型、强化学习算法。}
+
 \cventry{20.07-20.10}{飞利浦中国研究院, 上海}{自然语言处理研究型实习生}{}{}{}
-\cvlistitem{\href{https://github.com/SuperBruceJia/Medical-Concept-Mapping}{术语概念映射}: 1: 语法层 - 通过Byte-pair Encoding (BPE)与FMM\&BMM算法生成子词(subword); 2: 语义层 - 通过词向量的余弦相似度来衡量非标准术语语义上最接近的词; 3: 语用层 - 通过知识图谱寻找非标准术语对应的标准术语。}
-\cvlistitem{\href{https://github.com/SuperBruceJia/MedicalNER}{医学术语命名实体识别}: 对比了不同模型在组里提供的数据集上的性能 (包含CRF++, Character-level BiLSTM + CRF, Character-level BiLSTM + Word-level BiLSTM / CNNs + CRF模型), 将训练好的PyTorch模型通过Python Flask部署到网页上(\href{https://github.com/SuperBruceJia/pytorch-flask-deploy-webapp}{代码}), 进而通过Docker打包为Docker镜像在容器中运行。打包后的\href{https://hub.docker.com/r/shuyuej/ner-pytorch-model/tags}{Docker Image}已经开源到了Docker Hub上。}
+\cvlistitem{\href{https://github.com/SuperBruceJia/Medical-Concept-Mapping}{术语概念映射}: 
+		\\1. 语法层 - 通过Byte-pair Encoding (BPE)算法生成子词(subword), 使用FMM\&BMM算法获取子词最匹配的标准术语;
+		\\2. 语义层 - 根据词向量的余弦相似度得到非标准术语最接近的标准术语; 
+		\\3. 语用层 - 利用知识图谱查找非标准术语对应的标准术语。
+		\\\textbf{实验性能}: 在整个数据库(7,016个标准术语和非标准术语)取得了96.81\% 准确率性能。}
+\cvlistitem{\href{https://github.com/SuperBruceJia/MedicalNER}{医学术语命名实体识别}: \\1. 对比不同模型在组里提供的医学数据集上的性能(包含CRF++, Character-level BiLSTM + CRF, Character-level BiLSTM + Word-level BiLSTM / CNNs + CRF模型); 
+	\\2. 将训练好的PyTorch模型通过Flask部署到网页端(\href{https://github.com/SuperBruceJia/pytorch-flask-deploy-webapp}{代码});
+	\\3. 通过Docker打包为Docker Image在容器中运行, 打包后的\href{https://hub.docker.com/r/shuyuej/ner-pytorch-model/tags}{Docker Image}已开源到Docker Hub。}
 \cvlistitem{\href{https://github.com/SuperBruceJia/dynamic-web-crawlering-python}{网页爬虫}: 使用多种反爬虫技巧和并行爬虫, 成功从NSTL网站爬取所有的620,000词。}
 
 \cventry{19.06-19.08}{清华大学, 北京}{自然语言处理暑期实习生}{}{}{}
-\cvlistitem{\href{https://github.com/SuperBruceJia/Chinese-Chat-Title-NER-BERT-BiLSTM-CRF}{命名实体识别}: 保险对话系统中的一项子任务，目的是提取聊天对方中的称谓。第一阶段使用BERT-BiLSTM-CRF模型将聊天中出现的人名识别出来, 第二阶段通过策略将称谓与姓名匹配。(数据集: 30,676 samples, 96.73\% accuracy on 550 testing samples.)}
-\cvlistitem{脚本测试: 撰写Python脚本协助师姐测试销售训练评价系统，并且根据不同的困难程度整合销售员回复术语, 以此来验证系统的可靠性。}
+\cvlistitem{\href{https://github.com/SuperBruceJia/Chinese-Chat-Title-NER-BERT-BiLSTM-CRF}{命名实体识别}: 
+	\\1. 保险对话系统中的一项子任务，目的是提取聊天对方中的称谓;
+	\\2. 第一阶段使用BERT-BiLSTM-CRF模型识别出聊天中出现的人名; 
+	\\3. 第二阶段通过策略将称谓与姓名匹配。
+	\\\textbf{实验性能}: 数据集: 共30,676条句子, 在550条测试样本上取得了96.73\% 准确率。}
+\cvlistitem{脚本测试: 撰写Python脚本协助同事测试销售训练评价系统, 根据不同的困难程度(策略)整合销售员回复术语来验证系统的可靠性。}
 
 \subsection{开源项目}
-\cvline{\href{https://github.com/SuperBruceJia/EEG-DL}{EEG-DL}}{基于TensorFlow编写的脑机接口信号分类库(\textbf{GitHub 360+ stars})。}
-\cvline{\href{https://github.com/SuperBruceJia/Sci-Hub-Paper-Download-shell}{SciHub Shell}}{通过Linux Shell指令从Sci-Hub上下载学术论文, 后期还将其扩充为\href{https://github.com/SuperBruceJia/Google-Scholar-Citations-Download}{脚本}下载引用该篇论文的所有学术论文。}
+\cvline{\href{https://github.com/SuperBruceJia/EEG-DL}{EEG-DL}}{基于TensorFlow编写的脑机接口(时频)信号分类库(\textbf{GitHub 360+ stars})。}
+\cvline{\href{https://github.com/SuperBruceJia/Sci-Hub-Paper-Download-shell}{SciHub Shell}}{通过Shell指令从Sci-Hub下载学术论文, 后期扩展\href{https://github.com/SuperBruceJia/Google-Scholar-Citations-Download}{(脚本)}下载引用该篇论文的所有学术论文。}
 \cvline{\href{https://github.com/SuperBruceJia/dynamic-web-crawlering-python}{Web Crawler}}{包含多种反爬虫和并行爬虫(Python threading)的一系列动态网页爬虫技巧示范, 可以修改后应用到爬取任何网页。}
-\cvline{\href{https://github.com/SuperBruceJia/pytorch-flask-deploy-webapp}{Webapp}}{通过Python Flask将机器学习与深度学习模型部署到网页端, 随后将webapp打包为Docker Image, 并且在Docker Container中运行，同时尽可能缩小Docker Image的size。}
+\cvline{\href{https://github.com/SuperBruceJia/pytorch-flask-deploy-webapp}{Webapp}}{通过Python Flask将机器学习与深度学习模型部署到网页端, 将webapp打包为Docker Image, 在Docker Container中运行，同时尝试尽可能缩小Docker Image的size。}
 
 %---------------------------------------------------------------------------------
 
@@ -151,13 +161,17 @@
 \cvline{2018.10}{东北电力大学 优秀学生干部}
 \cvline{2018, 2019}{东北电力大学 创新奖学金, 一等奖/二等奖}
 \cvline{2017-2020}{东北电力大学 优秀学生奖学金, 三等奖}
-%\cvline{2017.06}{吉林市国际马拉松赛, 半程马拉松, 选手排名: 148/5000 (01:47:36)}
-%\cvline{2017.05}{东北电力大学, 第45届运动会, 学生男子组3000米障碍比赛, 校第七名}
+\cvline{2017.06}{吉林市国际马拉松赛, 半程马拉松, 选手排名: 148/5000 (01:47:36)}
+\cvline{2017.05}{东北电力大学, 第45届运动会, 学生男子组3000米障碍比赛, 校第七名}
 
 \section{技能}
-\cvline{编程语言}{熟练使用Python与Matlab, 熟悉C++/C/Embedded C和R}
-\cvline{常用库}{熟练使用TensorFlow和PyTorch, 熟悉Scikit-learn}
-\cvline{常用工具}{熟练使用Git, Linux Shell, Vim, Markdown, \LaTeX, 熟悉Docker和K8s}
+\cvline{编程语言}{熟练: Python、Matlab, 熟悉: C++/C/Embedded C、R}
+\cvline{常用库}{TensorFlow, PyTorch, Scikit-learn}
+\cvline{常用工具}{Git, Linux Shell, Vim, Markdown, \LaTeX, Docker, K8s}
 \cvline{英文能力}{英语六级 581, 英语四级 577, 多领国 110}
+
+\section{自我评价}
+\cvline{优点}{思维活跃, 比较有想法, 对身边的事物有良好的感知能力, 能够借鉴一些优秀的经验到工作中并提出一些新的想法; \newline 认真负责, 个人能力强, 有着丰富的学生干部工作经验, 能够很好的完成上级给的任务; \newline 乐观开朗, 乐于助人, 为人友善, 喜欢帮助身边的人, 能够与同学融洽相处; \newline 积极进取, 有上进心, 学习上积极进取, 从不轻言放弃, 敢于挑战自己。}
+\cvline{爱好}{编程, 马拉松, 跑步, 摄影, 旅游, 爬山等。}
 
 \end{document}
