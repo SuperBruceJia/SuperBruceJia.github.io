@@ -1,0 +1,163 @@
+%# -*- coding:utf-8 -*-
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage{fontspec,xunicode}
+\setmainfont{Tahoma}
+\usepackage[slantfont,boldfont]{xeCJK}
+\usepackage{xcolor}                 % replace by the encoding you are using
+
+\setmainfont{Times New Roman}%缺省英文字体.serif是有衬线字体sans serif无衬线字体
+\setCJKmainfont[ItalicFont={Kai}, BoldFont={Hei}]{STSong}%衬线字体 缺省中文字体为
+\setCJKsansfont{STSong}
+\setCJKmonofont{STFangsong}%中文等宽字体
+
+%-----------------------xeCJK下设置中文字体------------------------------%
+\setCJKfamilyfont{song}{SimSun}                             %宋体 song
+\newcommand{\song}{\CJKfamily{song}}
+\setCJKfamilyfont{fs}{FangSong_GB2312}                      %仿宋2312 fs
+\newcommand{\fs}{\CJKfamily{fs}}
+\setCJKfamilyfont{yh}{Microsoft YaHei}                    %微软雅黑 yh
+\newcommand{\yh}{\CJKfamily{yh}}
+\setCJKfamilyfont{hei}{SimHei}                              %黑体  hei
+\newcommand{\hei}{\CJKfamily{hei}}
+\setCJKfamilyfont{hwxh}{STXihei}                                %华文细黑  hwxh
+\newcommand{\hwxh}{\CJKfamily{hwxh}}
+\setCJKfamilyfont{asong}{Adobe Song Std}                        %Adobe 宋体  asong
+\newcommand{\asong}{\CJKfamily{asong}}
+\setCJKfamilyfont{ahei}{Adobe Heiti Std}                            %Adobe 黑体  ahei
+\newcommand{\ahei}{\CJKfamily{ahei}}
+\setCJKfamilyfont{akai}{Adobe Kaiti Std}                            %Adobe 楷体  akai
+\newcommand{\akai}{\CJKfamily{akai}}
+
+%------------------------------设置字体大小------------------------%
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     %初号
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} %小初号
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      %一号
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      %二号
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  %小二号
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}  %三号
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}         %四号
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  %小四号
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    %五号
+\newcommand{\subwuhao}{\fontsize{10pt}{\baselineskip}\selectfont}    %次五号
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   %小五号
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}  %六号
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}    %七号
+
+
+%\usepackage{fontawesome}
+% \setCJKmainfont[BoldFont={WenQuanYi Micro Hei/Bold}]{WenQuanYi Micro Hei}
+%\defaultfontfeatures{Mapping=tex-text}
+%\XeTeXlinebreaklocale "zh"
+%\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+%\moderncvtheme[blue,roman]{hht}
+% character encoding
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\familyname{}
+\firstname{贾舒越}
+\title{Shuyue Jia}
+\mobile{13844602327}
+\email{shuyuej@ieee.org}
+\homepage{https://shuyuej.com}
+\social[github]{https://github.com/SuperBruceJia}
+
+%\photo[64pt]{avatar.png}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{China\TeX 您的LaTeX乐园，TeX\&\LaTeX 王国}                 % optional, remove the line if not wante
+
+%\nopagenumbers{}                             
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\vspace*{-14mm}
+
+%---------------------------------------------------------------------------------
+
+\section{教育经历}
+\cventry{21.05-今}{香港城市大学, 香港}{硕士(M.Phil.)}{计算机科学与技术}{}{}
+\cvlistitem{导师: 王诗淇, 研究方向: 计算机视觉(图像质量评估与感知优化)}
+\cvlistitem{GPA: 3.50/4.0, 主修课程: 大数据算法与技术(A), 机器学习算法与应用(B)}
+
+\cventry{16.09-20.06}{东北电力大学, 吉林}{本科(B.Eng.)}{智能科学与技术}{}{}
+\cvlistitem{导师: 侯一民, 研究方向: 深度学习(基于深度学习的时频信号处理)}
+\cvlistitem{GPA: 80.26/100}
+
+\cventry{17.07-17.09}{美国加州大学欧文分校, 加州}{暑期交换生}{计算机科学与技术}{}{}
+\cvlistitem{GPA: 4.0/4.0, 主修课程: 计算机体系架构(A+), 大学写作与交流(pass)}
+
+%---------------------------------------------------------------------------------
+
+\section{工作经历}
+\cventry{21.09-22.04}{香港城市大学, 香港}{研究助理}{}{}{}
+\cvlistitem{\href{https://shuyuej.com/files/Model-Compression-Acceleration.pdf}{模型部署}: 调研了深度学习模型压缩与轻量化的基础知识, 以及移动端设备部署模型的开源框架。}
+
+\cventry{20.10-20.12}{腾讯视频, 北京}{推荐系统实习生}{}{}{}
+\cvlistitem{统一架构: 协助师兄做好腾讯视频统一架构中重排模块的部分工作。}
+\cvlistitem{\href{https://shuyuej.com/files/Dynamic-GCN-Survey.pdf}{学术调研}: 调研了动态图卷积神经网络模型, 学习了基础的强化学习算法。}
+  
+\cventry{20.07-20.10}{飞利浦中国研究院, 上海}{自然语言处理研究型实习生}{}{}{}
+\cvlistitem{\href{https://github.com/SuperBruceJia/Medical-Concept-Mapping}{术语概念映射}: 1: 语法层 - 通过Byte-pair Encoding (BPE)与FMM\&BMM算法生成子词(subword); 2: 语义层 - 通过词向量的余弦相似度来衡量非标准术语语义上最接近的词; 3: 语用层 - 通过知识图谱寻找非标准术语对应的标准术语。}
+\cvlistitem{\href{https://github.com/SuperBruceJia/MedicalNER}{医学术语命名实体识别}: 对比了不同模型在组里提供的数据集上的性能 (包含CRF++, Character-level BiLSTM + CRF, Character-level BiLSTM + Word-level BiLSTM / CNNs + CRF模型), 将训练好的PyTorch模型通过Python Flask部署到网页上(\href{https://github.com/SuperBruceJia/pytorch-flask-deploy-webapp}{代码}), 进而通过Docker打包为Docker镜像在容器中运行。打包后的\href{https://hub.docker.com/r/shuyuej/ner-pytorch-model/tags}{Docker Image}已经开源到了Docker Hub上。}
+\cvlistitem{\href{https://github.com/SuperBruceJia/dynamic-web-crawlering-python}{网页爬虫}: 使用多种反爬虫技巧和并行爬虫, 成功从NSTL网站爬取所有的620,000词。}
+
+\cventry{19.06-19.08}{清华大学, 北京}{自然语言处理暑期实习生}{}{}{}
+\cvlistitem{\href{https://github.com/SuperBruceJia/Chinese-Chat-Title-NER-BERT-BiLSTM-CRF}{命名实体识别}: 保险对话系统中的一项子任务，目的是提取聊天对方中的称谓。第一阶段使用BERT-BiLSTM-CRF模型将聊天中出现的人名识别出来, 第二阶段通过策略将称谓与姓名匹配。(数据集: 30,676 samples, 96.73\% accuracy on 550 testing samples.)}
+\cvlistitem{脚本测试: 撰写Python脚本协助师姐测试销售训练评价系统，并且根据不同的困难程度整合销售员回复术语, 以此来验证系统的可靠性。}
+
+\subsection{开源项目}
+\cvline{\href{https://github.com/SuperBruceJia/EEG-DL}{EEG-DL}}{基于TensorFlow编写的脑机接口信号分类库(\textbf{GitHub 360+ stars})。}
+\cvline{\href{https://github.com/SuperBruceJia/Sci-Hub-Paper-Download-shell}{SciHub Shell}}{通过Linux Shell指令从Sci-Hub上下载学术论文, 后期还将其扩充为\href{https://github.com/SuperBruceJia/Google-Scholar-Citations-Download}{脚本}下载引用该篇论文的所有学术论文。}
+\cvline{\href{https://github.com/SuperBruceJia/dynamic-web-crawlering-python}{Web Crawler}}{包含多种反爬虫和并行爬虫(Python threading)的一系列动态网页爬虫技巧示范, 可以修改后应用到爬取任何网页。}
+\cvline{\href{https://github.com/SuperBruceJia/pytorch-flask-deploy-webapp}{Webapp}}{通过Python Flask将机器学习与深度学习模型部署到网页端, 随后将webapp打包为Docker Image, 并且在Docker Container中运行，同时尽可能缩小Docker Image的size。}
+
+%---------------------------------------------------------------------------------
+
+\section{科研经历}
+\cvline{已录用}{Deep Feature Mining via Attention-based BiLSTM-GCN for Human Motor Imagery Recognition \href{https://www.frontiersin.org/articles/10.3389/fbioe.2021.706229/abstract}{[论文]}\href{https://github.com/SuperBruceJia/EEG-DL}{[代码]}. \newline Yimin Hou, \textbf{Shuyue Jia (通讯作者)}, Xiangmin Lun, Shu Zhang, Jinglei Lv. \newline Frontiers in Bioengineering and Biotechnology, 2021. (SCI二区, IF 5.89)}
+
+\cvline{已录用}{A Novel Approach of Decoding EEG Four-Class Motor Imagery Tasks via Scout ESI and CNN \href{https://iopscience.iop.org/article/10.1088/1741-2552/ab4af6/meta}{[论文]} \href{https://github.com/SuperBruceJia/EEG-Motor-Imagery-Classification-CNNs-TensorFlow}{[代码]}. \newline Yimin Hou, Lu Zhou, \textbf{Shuyue Jia}, and Xiangmin Lun. \newline Journal of Neural Engineering, 2020. (SCI二区, IF 5.379)}
+
+\cvline{已录用}{Improving Performance: a Collaborative Strategy for the Multi-data Fusion of Electronic Nose and Hyperspectral to Track the Quality Diﬀerence of Rice \href{https://www.sciencedirect.com/science/article/abs/pii/S0925400521001143}{[论文]}. \newline Yan Shi, Hangcheng Yuan, Chenao Xiong, \textbf{Shuyue Jia}, Jingjing Liu, and Hong Men. \newline Sensors \& Actuators: B. Chemical, 2021. (SCI一区, IF 7.46)}
+
+\cvline{已录用}{Origin Traceability of Rice based on an Electronic Nose Coupled with a Feature Reduction Strategy \href{https://iopscience.iop.org/article/10.1088/1361-6501/abb9e7/meta}{[论文]}. \newline Yan Shi, Xiaofei Jia, Hangcheng Yuan, \textbf{Shuyue Jia}, Jingjing Liu, and Hong Men. \newline Measurement Science and Technology, 2020. (SCI三区, IF 2.046)}
+
+\cvline{在审}{GCNs-Net: A Graph Convolutional Neural Network Approach for Decoding Time-resolved EEG Motor Imagery Signals \href{https://arxiv.org/abs/2006.08924}{[论文]} \href{https://shuyuej.com/files/GCNs-Net.pdf}{[Spectral GNN Presentation]} \href{https://shuyuej.com/files/Dynamic-GCN-Survey.pdf}{[Dynamic GNN Presentation]} \href{https://github.com/SuperBruceJia/EEG-DL}{[代码]}. \newline Yimin Hou, \textbf{Shuyue Jia (通讯作者)}, Xiangmin Lun, Shu Zhang, Jinglei Lv. \newline arXiv preprint arXiv:2006.08924, 2022.}
+
+\cvline{在审}{Attention-based Graph ResNet for Motor Intent Detection from Raw EEG signals. \newline \textbf{Shuyue Jia (通讯作者)}, Yimin Hou, Yan Shi, and Yang Li. \newline arXiv preprint arXiv:2007.13484, 2022.}
+
+\cvline{待投}{No-reference Image Quality Assessment via Non-local Modeling. \newline \textbf{Shuyue Jia}, Baoliang Chen, Dingquan Li, Shiqi Wang.}
+
+\cvline{}{\textbf{关于部分发表论文作者排名的备注: 实验室规定，导师为第一作者。}}
+
+%---------------------------------------------------------------------------------
+
+\section{获奖与证书}
+\cvline{2021.10}{香港渣打国际马拉松赛, 半程马拉松, 选手排名: 318/6000 (01:38:14)}
+\cvline{2019.04}{美国大学生交叉学科建模竞赛, 二等奖, \href{https://shuyuej.com/files/ICM-2019.pdf}{[论文]}}
+\cvline{2018.08}{中国吉林省大学生数学建模竞赛, 一等奖, \href{https://shuyuej.com/files/MCM-2018.pdf}{[论文]}}
+\cvline{2018.04}{美国大学生交叉学科建模竞赛, 三等奖, \href{https://shuyuej.com/files/ICM-2018.pdf}{[论文]}}
+\cvline{2018.10}{东北电力大学 优秀学生干部}
+\cvline{2018, 2019}{东北电力大学 创新奖学金, 一等奖/二等奖}
+\cvline{2017-2020}{东北电力大学 优秀学生奖学金, 三等奖}
+%\cvline{2017.06}{吉林市国际马拉松赛, 半程马拉松, 选手排名: 148/5000 (01:47:36)}
+%\cvline{2017.05}{东北电力大学, 第45届运动会, 学生男子组3000米障碍比赛, 校第七名}
+
+\section{技能}
+\cvline{编程语言}{熟练使用Python与Matlab, 熟悉C++/C/Embedded C和R}
+\cvline{常用库}{熟练使用TensorFlow和PyTorch, 熟悉Scikit-learn}
+\cvline{常用工具}{熟练使用Git, Linux Shell, Vim, Markdown, \LaTeX, 熟悉Docker和K8s}
+\cvline{英文能力}{英语六级 581, 英语四级 577, 多领国 110}
+
+\end{document}
