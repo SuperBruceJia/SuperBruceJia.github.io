@@ -246,21 +246,7 @@
     <details>
       <summary style="outline:none">See More</summary>
       <ul>
-        We introduced a novel approach that combined Attention-based BiLSTM with the Graph Convolutional Neural Network (Graph CNN / GCN).
-        <ul>
-          <li>
-            Open Source <a href="https://github.com/SuperBruceJia/EEG-DL">EEG-DL</a>, a Deep Learning (DL) library written by TensorFlow for EEG Tasks (Signals) Classification.<br>
-          </li>
-          <li>
-            Attention-based BiLSTM was firstly used to extract features from raw EEG signals. The followed GCN model classified the features of four EEG Motor Imagery (MI) tasks, imagining left fist, right fist, both fists, and both feet.
-          </li>
-          <li>
-            98.81% and 94.64% accuracies have been achieved for the individual subject and a group of 20 subjects.
-          </li>
-          <li>
-            Benchmark Dataset: <a href="https://archive.physionet.org/pn4/eegmmidb/">EEG Motor Movement/Imagery Dataset</a>.
-          </li>
-        </ul>
+        This paper presents a novel deep learning approach designed toward both remarkably accurate and responsive motor imagery (MI) recognition based on scalp EEG. Bidirectional long short-term memory (BiLSTM) with the attention mechanism is employed, and the graph convolutional neural network (GCN) promotes the decoding performance by cooperating with the topological structure of features.
         <div>
           <div style="text-align:center">
             <img width="99%device-width" src="./imgs/Picture3.jpg" alt="Project3.1">
@@ -337,19 +323,7 @@
     <details>
       <summary style="outline:none">See More</summary>
       <ul>
-        Based on the Graph Convolutional Neural Network (Graph CNN / GCN), the GCNs-Net was introduced, which filtered the EEG Motor Imagery (MI) signals considering the functional topological relationship of EEG electrodes.
-        <ul>
-          <li>
-            At the subject and group level (subject-specific adaptation), 98.72% and 89.387% accuracy were achieved, respectively.
-          </li>
-          <li>
-            Pearson&rsquo;s Matrix was applied to measure the correlations among channels, and represented the graph structure, i.e., graph weights and degrees.
-          </li>
-          <li>
-            Benchmark Datasets: <a href="https://archive.physionet.org/pn4/eegmmidb/"> EEG Motor
-              Movement/Imagery Dataset</a>, in which 20 ( a million samples), 50, 100 participants&rsquo; data were used, and the <a href="https://gin.g-node.org/robintibor/high-gamma-dataset">High-Gamma Dataset</a>, in which 14  participates' data were used.
-          </li>
-        </ul>
+        Traditional works classify EEG signals without considering the topological relationship among electrodes. Thus, a graph convolutional neural network is presented while cooperating with the functional topological relationship of electrodes.
         <div>
           <div style="text-align:center">
             <img width="99%device-width" src="imgs/Picture2.jpg" alt="Project2">
@@ -375,6 +349,12 @@
       <a href="https://arxiv.org/abs/2007.13484"><i class="fab fa fa-file-pdf-o"></i> Paper</a>
     </div>
     <em><br>arXiv preprint arXiv:2007.13484</em>, 2022.
+    <details>
+      <summary style="outline:none">See More</summary>
+      <ul>
+        The exhibited interaction between EEG channels might not be appropriately measured via Euclidean distance. To fill the gap, an attention-based graph residual network, a novel structure of Graph Convolutional Neural Network (GCN), was presented to detect human motor intents from raw EEG signals, where the topological structure of EEG electrodes was built as a graph. Meanwhile, deep residual learning with a full-attention architecture was introduced to address the degradation problem concerning deeper networks in raw EEG motor imagery (MI) data.
+      </ul>
+    </details>
   </li>
 
   <hr>
