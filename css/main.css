@@ -89,12 +89,12 @@ hr{border:0;height:0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px soli
 }
 
 .content .profile-picture{
-	height: 340px;
-	width: 260px;
+	height: 380px;
+	width: 315px;
 	position: relative;
 	float: right;
 	border-radius: 10%}
-.content .profile-picture{padding:10px; margin:0px 10px 10px 30px}
+.content .profile-picture{padding:10px; margin:0px 5px 5px 20px}
 
 @media (max-width: 500px){.content .profile-picture img{margin-top:0px}}
 .content img{
