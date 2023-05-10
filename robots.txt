@@ -1,5 +1,0 @@
-# Robots.txt file from http://www.seovip.cn
-# All robots will spider the domaini
-
-User-agent: *
-Disallow:
