@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.6.30)  31 JUL 2023 10:53
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.6.30)  31 JUL 2023 16:08
  restricted system commands enabled.
 **ShuyueJIA-résumé.tex
 (./ShuyueJIA-résumé.tex
@@ -785,7 +785,7 @@ LaTeX Font Info:    Trying to load font information for TU+academicons on input
 (/usr/local/texlive/2023/texmf-dist/tex/latex/academicons/tuacademicons.fd)
 
 LaTeX Font Warning: Font shape `TU/lmr/bx/sc' undefined
-(Font)              using `TU/lmr/bx/n' instead on input line 35.
+(Font)              using `TU/lmr/bx/n' instead on input line 36.
 
 
 Package hyperref Warning: Suppressing link with empty target on input line 64.
@@ -802,7 +802,7 @@ m/n/10 Codes][] [][\TU/fontawesomefree/solid/n/10  \TU/lmr/m/n/10 Slides][]
  []
 
 
-Overfull \hbox (3.03325pt too wide) in paragraph at lines 139--139
+Overfull \hbox (3.03325pt too wide) in paragraph at lines 141--141
 []\TU/lmr/m/n/10 No-reference Im-age Qual-ity As-sess-ment via Non-local De-pen-
 dency Mod-el-ing [][\TU/academicons/m/n/10  \TU/lmr/m/n/10 Pa-per][] [][\TU/
 fontawesomebrands/regular/n/10  \TU/lmr/m/n/10 Codes][] [][\TU/fontawesomefr
@@ -811,7 +811,7 @@ ee/solid/n/10  \TU/lmr/m/n/10 Slides][] [][\TU/fontawesomefree/solid/n/10
  []
 
 [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 231--237
+Underfull \hbox (badness 10000) in paragraph at lines 235--241
 
  []
 
@@ -829,7 +829,7 @@ Here is how much of LuaTeX's memory you used:
  453 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 56 glue_spec,
  5 attribute_list, 2 write nodes
-   avail lists: 2:1224,3:1103,4:175,5:558,6:123,7:8953,8:15,9:626,10:14,11:653
+   avail lists: 2:1224,3:1103,4:175,5:570,6:123,7:9127,8:15,9:626,10:14,11:677
  44120 multiletter control sequences out of 65536+600000
  42 fonts using 3409311 bytes
  115i,6n,111p,427b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -851,7 +851,7 @@ f></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
 r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 local/texlive/2023/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on ShuyueJIA-résumé.pdf (5 pages, 113501 bytes).
+Output written on ShuyueJIA-résumé.pdf (5 pages, 113529 bytes).
 
 PDF statistics: 291 PDF objects out of 1000 (max. 8388607)
  238 compressed objects within 3 object streams
