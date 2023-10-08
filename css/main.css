@@ -97,12 +97,12 @@ hr{border: 0;
 }
 
 .content .profile-picture{
-	height: 430px;
-	width: 315px;
+	height: 424.34px;
+	width: 310px;
 	position: relative;
 	float: right;
-	border-radius: 5%}
-.content .profile-picture{padding:10px; margin:0px 5px 5px 20px}
+	border-radius: 10%}
+.content .profile-picture{padding:10px; margin:0px 5px 5px 10px}
 
 @media (max-width: 500px){.content .profile-picture img{margin-top:0px}}
 .content img{
