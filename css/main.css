@@ -96,13 +96,25 @@ hr{border: 0;
 	font-style: italic
 }
 
-.content .profile-picture{
-	height: 424.34px;
-	width: 310px;
+.content .profile-container {
 	position: relative;
 	float: right;
-	border-radius: 10%}
-.content .profile-picture{padding:20px; margin:0px 0px 5px 20px}
+	margin: -15px 0px 5px 20px;
+}
+
+.content .profile-picture {
+	height: 424.34px;
+	width: 310px;
+	border-radius: 10%;
+	padding: 20px; 
+}
+
+.image-description {
+	margin-top: -20px;
+	font-size: 20px;
+	color: #333;
+	text-align: center;
+}
 
 @media (max-width: 500px){.content .profile-picture img{margin-top:0px}}
 .content img{
