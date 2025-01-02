@@ -53,6 +53,24 @@
     }
 </style>
 
+<style>
+  .arrow-list {
+    list-style-type: none; /* Removes default bullets */
+    padding-left: 0;
+    margin: 0; /* Remove extra margins around the list */
+  }
+  
+  .arrow-list li {
+    font-size: 24px; /* Set font size */
+    line-height: 1.0; /* Shorter line spacing */
+  }
+  
+  .arrow-list li::before {
+    content: '→'; /* Unicode rightward arrow */
+    margin-right: 8px; /* Add space between arrow and text */
+  }
+</style>
+
 <body>
 <div class="wrapper">
 <div class="navbar container">
@@ -85,8 +103,12 @@
   𝗥𝗲𝘀𝗲𝗮𝗿𝗰𝗵 𝗜𝗻𝘁𝗲𝗿𝗲𝘀𝘁𝘀:<br>
   In my career life, I keep seeking for a sweet spot between engaging in exciting research and open-sourcing impactful software and AI systems:
   <li>Multimodal Large Language Models (MLLMs)</li>
-  <li>Large Language Models (LLMs) [<a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1">1</a>]</li>
-  <li>Retrieval-augmented Generation (RAG) [<a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2">1</a>]</li>
+  <li>Large Language Models (LLMs)
+    <ul class="arrow-list">
+      <li>Continual Pre-training [<a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1">1</a>]</li>
+      <li>Retrieval-augmented Generation (RAG) [<a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2">1</a>]</li>
+    </ul>
+  </li>
   <li>Generative AI [<a href="https://ieeexplore.ieee.org/document/10566053">1</a>]</li>
   <li>Computer Vision [<a href="https://ieeexplore.ieee.org/document/9950035">1</a>, <a href="https://github.com/SuperBruceJia/Sonar-Image-Segmentation-through-Entropy-Method">2</a>]</li>
   <li>Natural Language Processing [<a href="https://github.com/SuperBruceJia/promptcraft">1</a>, <a href="https://github.com/SuperBruceJia/Medical-Concept-Mapping">2</a>, <a href="https://github.com/SuperBruceJia/MedicalNER">3</a>]</li>
