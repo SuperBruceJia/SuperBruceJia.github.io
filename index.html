@@ -73,11 +73,16 @@
 
 <body>
 <div class="wrapper">
-<div class="navbar container">
-  <a id="author-name" class="alignable pull-left" style="text-decoration:none; display: flex; align-items: center; gap: 0.05em;">
-    Shuyue Jia (<img class="chinese-name-img" src="./imgs/Profile/chinese_name.png" alt="贾舒越" style="width: 170px; height: auto; vertical-align: middle;">)
-  </a>
-</div>
+  <div class="navbar container">
+    <a id="author-name" class="alignable pull-left"
+      style="text-decoration:none; display: flex; align-items: center; gap: 0.05em;">
+      Shuyue Jia (<img class="chinese-name-img" src="./imgs/Profile/chinese_name.png"
+        alt="贾舒越" style="width: 170px; height: auto; vertical-align: middle;">)
+    </a>
+    <a id="author-name" class="alignable pull-right"
+      style="width: 260px; text-decoration:none; display: flex; align-items: center; transform: translateY(15px);"
+      href="https://brucejia.myportfolio.com">Photography</a>
+  </div>
 <div style="clear:both"></div>
 
 <hr>
@@ -108,7 +113,7 @@
   <li>𝗠𝗼𝗱𝗲𝗹𝗶𝗻𝗴
     <ul class="arrow-list">
       <li>Multimodal Foundation Model (FM)</li>
-      <li>LLM-based Agent, Vision-language Agent (VLA), and Multi-agent System (MAS)</li>
+      <li>LLM-based Agent, Vision-language Agent (VLA), and Multi-agent System (MAS) [<a href="https://www.medrxiv.org/content/10.1101/2025.08.06.25333160v1">1</a>]</li>
       <li>Large Vision-language Model (VLM)</li>
       <li>Diffusion Model [<a href="https://ieeexplore.ieee.org/document/10566053">1</a>]</li>
       <li>Graph CNN (GCN) [<a href="https://ieeexplore.ieee.org/document/9889159">1</a>]</li>
@@ -371,6 +376,12 @@
 <h2 id="news">News</h2>
 <ul style="list-style:none; margin:0; padding:0">
   <li>
+    <strong>Aug 2025</strong> A <a href="./files/Presentation/Evidence-Retrieval-and-Grounding.pdf"> Presentation</a> of Evidence Retrieval and Grounding in Medicine.
+  </li>
+  <li>
+    <strong>Aug 2025</strong> Our <a href="https://www.medrxiv.org/content/10.1101/2025.08.06.25333160v1"> Medical Evidence Retrieval & Grounding Agentic System </a> is available online!
+  </li>
+  <li>
     <strong>July 2025</strong> Open Source <a href="https://github.com/SuperBruceJia/Awesome-Text-Generation-Evaluation"> Awesome Text Generation Evaluation</a>, a curated list of evaluation metrics for Natural Language Generation (NLG)
     <iframe
       src="https://img.shields.io/github/stars/SuperBruceJia/Awesome-Text-Generation-Evaluation?style=social" 
@@ -567,10 +578,36 @@
 <ol>
   <li>
     <div style="float:left;">
+      <font color="#00066f">Agentic Memory-augmented Retrieval and Evidence Grounding in Medicine</font>
+    </div>
+    <div style="float:right;">
+      <a href="./files/Presentation/Evidence-Retrieval-and-Grounding.pdf"><i class="fa fa-file-powerpoint-o"></i> Slides</a>
+      <a href="https://www.medrxiv.org/content/10.1101/2025.08.06.25333160v1"><i class="fab fa fa-file-pdf-o"></i> Paper</a>
+    </div><br>
+    <strong>Shuyue Jia</strong>, Subhrangshu Bit, Varuna H. Jasodanand, Yi Liu, Vijaya B. Kolachalama
+    <br><em>Technical Report</em>
+    <details>
+      <summary style="outline:none">See More</summary>
+      <ul>
+        <div>
+          <div style="text-align:center">
+            <img width="99%device-width" src="imgs/Agent/Medical-Agent.jpg" alt="Medical AI Agent Project">
+          </div>
+        </div>
+        We developed a unified, open-source LLM-based agentic system that integrates document retrieval, re-ranking, evidence grounding, and diagnosis generation to support dynamic, multi-step medical reasoning. Our system features a lightweight retrieval-augmented generation pipeline coupled with a cache-and-prune memory bank, enabling efficient long-context inference beyond standard LLM limits. The system autonomously invokes specialized tools, eliminating the need for manual prompt engineering or brittle multi-stage templates.
+      </ul>
+    </details>
+  </li>
+
+  <hr>
+
+  <li>
+    <div style="float:left;">
       <font color="#00066f">PodGPT: An Audio-augmented Large Language Model for Research and Education</font>
     </div>
     <div style="float:right;">
       <a href="https://medpodgpt.org"><i class="fa fa-codepen"></i> Product</a>
+      <a href="./files/Presentation/Evidence-Retrieval-and-Grounding.pdf"><i class="fa fa-file-powerpoint-o"></i> Slides</a>
       <a href="https://github.com/vkola-lab/podgpt"><i class="fa fa-github"></i> Codes</a>
       <a href="https://www.nature.com/articles/s44385-025-00022-0"><i class="fab fa fa-file-pdf-o"></i> Paper</a>
     </div><br>
@@ -597,6 +634,7 @@
     </div>
     <div style="float:right;">
       <a href="https://medpodgpt.org"><i class="fa fa-codepen"></i> Product</a>
+      <a href="./files/Presentation/Evidence-Retrieval-and-Grounding.pdf"><i class="fa fa-file-powerpoint-o"></i> Slides</a>
       <a href="https://github.com/vkola-lab/medpodgpt"><i class="fa fa-github"></i> Codes</a>
       <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"><i class="fab fa fa-file-pdf-o"></i> Paper</a>
     </div><br>
@@ -839,9 +877,9 @@
       <li><a href="https://amia.org/education-events/amia-2025-clinical-informatics-conference/spc" style="color:black;">Scientific Program Committee Member, 2025 AMIA Clinical Informatics Conference</a></li>
     </ul>
   </li>
-  <li><strong>Member</strong> of <a href="https://www.ieee.org" style="color:black;">IEEE</a>, <a href="https://www.acm.org" style="color:black;">ACM</a>, <a href="https://www.aclweb.org/portal/what-is-cl" style="color:black;">ACL</a>, and <a href="https://aaai.org" style="color:black;">AAAI</a></li>
+  <li><strong>Member</strong> of <a href="./awards/SigmaXi_2025.pdf" style="color:black;">Sigma Xi</a>, <a href="https://www.ieee.org" style="color:black;">IEEE</a>, <a href="https://www.acm.org" style="color:black;">ACM</a>, <a href="https://www.aclweb.org/portal/what-is-cl" style="color:black;">ACL</a>, and <a href="https://aaai.org" style="color:black;">AAAI</a></li>
 </ol>
-  
+
 <h2 id="Selected Awards">Selected Awards</h2>
 <ol>
   <li>
