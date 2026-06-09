@@ -616,9 +616,9 @@
 </ul>
 
 <h2 id="publications">Publications</h2>
-<h3 id="Generative AI"><font color="black">Topic 1 - </font><font color="#DE3163">Generative AI and Foundation Models</font></h3>
+<h3 id="Generative AI"><font color="black">Topic 1 - </font><font color="#DE3163">Medical Imaging Foundation Model</font></h3>
 <ol>
-    <li>
+  <li>
     <div style="float:left;">
       <font color="#00066f">Vision-language Framework for Multi-sequence Brain Magnetic Resonance Imaging</font>
     </div>
@@ -628,7 +628,10 @@
       <a href="https://www.medrxiv.org/content/medrxiv/early/2026/04/04/2026.03.30.26349106/DC1/embed/media-1.pdf"><i class="fab fa fa-file-pdf-o"></i> Supplementary Material</a>
     </div><br>
     Diala Lteif, <strong>Shuyue Jia</strong>, Subhrangshu Bit, Artem Kaliaev, Asim Z. Mian, Juan E. Small, Balamurugan Mangaleswaran, Bryan A. Plummer, Sarah A. Bargal, Rhoda Au, Vijaya B. Kolachalama
-    <br><em>Technical Report</em>
+    <br><em>Technical Report</em><br>
+    <b>Dataset scale</b>: >850K multi-sequence brain MRIs, >73K patient visits, >1M instruction tuning data<br>
+    <b>Model scale</b>: 9B (lightweight) and 27B (most capable)<br>
+    <b>Our vision</b>: Clinically validated specialized intelligence for high-stakes medical imaging.<br>
     <details>
       <summary style="outline:none">See More</summary>
       <ul>
@@ -647,6 +650,34 @@
     </details>
   </li>
 
+  <hr>
+
+  <li>
+    <div style="float:left;">
+      <font color="#00066f">MedSyn: Text-guided Anatomy-aware Synthesis of High-Fidelity 3D CT Images</font>
+    </div>
+    <div style="float:right;">
+      <a href="https://github.com/batmanlab/MedSyn"><i class="fa fa-github"></i> Codes</a>
+      <a href="https://ieeexplore.ieee.org/document/10566053"><i class="fab fa fa-file-pdf-o"></i> Paper</a>
+    </div><br>
+    Yanwu Xu, Li Sun, Wei Peng, <strong>Shuyue Jia</strong>, Katelyn Morrison, Adam Perer, Afrooz Zandifar, Shyam Visweswaran, Motahhare Eslami, Kayhan Batmanghelich
+    <br><em>IEEE Transactions on Medical Imaging</em> (IEEE T-MI)
+    <details>
+      <summary style="outline:none">See More</summary>
+      <ul>
+        <div>
+          <div style="text-align:center">
+            <img width="99%device-width" src="imgs/Research/MedSyn.jpg" alt="MedSyn Project">
+          </div>
+        </div>
+        This work introduces an innovative methodology for producing high-quality 3D lung CT images guided by textual information. Specifically, we introduce a hierarchical scheme that uses a modified UNet architecture. We start by synthesizing low-resolution images conditioned on the text, serving as a foundation for subsequent generators for complete volumetric data. To ensure the anatomical plausibility of the generated samples, we provide further guidance by generating vascular, airway, and lobular segmentation masks in conjunction with the CT images.
+      </ul>
+    </details>
+  </li>
+</ol>
+
+<h3 id="Generative AI"><font color="black">Topic 2 - </font><font color="#DE3163">Scientific Foundation Model</font></h3>
+<ol>
   <li>
     <div style="float:left;">
       <font color="#00066f">Agentic Memory-augmented Retrieval and Evidence Grounding for Medical Question-Answering Tasks</font>
@@ -658,7 +689,10 @@
       <a href="https://ars.els-cdn.com/content/image/1-s2.0-S1386505626000791-mmc1.pdf"><i class="fab fa fa-file-pdf-o"></i> Supplementary Material</a>
     </div><br>
     <strong>Shuyue Jia</strong>, Subhrangshu Bit, Varuna H. Jasodanand, Yi Liu, Vijaya B. Kolachalama
-    <br><em>International Journal of Medical Informatics</em>
+    <br><em>International Journal of Medical Informatics</em><br>
+    <b>Dataset scale</b>: >30M documents, >68M snippets<br>
+    <b>Model scale</b>: 72B (equipped with 5 designed tools)<br>
+    <b>Our vision</b>: AI-powered precision medical evidence for everyone, everywhere.<br>
     <details>
       <summary style="outline:none">See More</summary>
       <ul>
@@ -715,7 +749,10 @@
       <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs44385-025-00022-0/MediaObjects/44385_2025_22_MOESM1_ESM.pdf"><i class="fab fa fa-file-pdf-o"></i> Supplementary Material</a>
     </div><br>
     <strong>Shuyue Jia</strong>, Subhrangshu Bit, Edward Searls, Meagan V. Lauber, Lindsey A. Claus, Pengrui Fan, Varuna H. Jasodanand, Divya Veerapaneni, William M. Wang, Rhoda Au, Vijaya B. Kolachalama
-    <br><em>Nature npj Biomedical Innovations</em>
+    <br><em>Nature npj Biomedical Innovations</em><br>
+    <b>Dataset scale</b>: >42M text tokens, >3700 hours of podcasts, >10K top journal articles<br>
+    <b>Model scale</b>: 2B, 7B, 11B, 8x7B MoE, 70B<br>
+    <b>Our vision</b>: Podcast-augmented AI for equitable access to scientific knowledge.<br>
     <details>
       <summary style="outline:none">See More</summary>
       <ul>
@@ -742,7 +779,10 @@
       <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"><i class="fab fa fa-file-pdf-o"></i> Paper</a>
     </div><br>
     <strong>Shuyue Jia</strong>, Subhrangshu Bit, Edward Searls, Lindsey A. Claus, Pengrui Fan, Varuna H. Jasodanand, Meagan V. Lauber, Divya Veerapaneni, William M. Wang, Rhoda Au, Vijaya B. Kolachalama
-    <br><em>Technical Report</em>
+    <br><em>Technical Report</em><br>
+    <b>Dataset scale</b>: >39M text tokens, >4300 hours of podcasts<br>
+    <b>Model scale</b>: 2B, 7B, 8B, 8x7B MoE, 70B<br>
+    <b>Our vision</b>: Audio-augmented AI for medical research and education.<br>
     <details>
       <summary style="outline:none">See More</summary>
       <ul>
@@ -755,28 +795,28 @@
       </ul>
     </details>
   </li>
-  
+
   <hr>
-  
+
   <li>
     <div style="float:left;">
-      <font color="#00066f">MedSyn: Text-guided Anatomy-aware Synthesis of High-Fidelity 3D CT Images</font>
+      <font color="#00066f">Performance of Open-source Large Language Models on Nephrology Self-assessment Program</font>
     </div>
     <div style="float:right;">
-      <a href="https://github.com/batmanlab/MedSyn"><i class="fa fa-github"></i> Codes</a>
-      <a href="https://ieeexplore.ieee.org/document/10566053"><i class="fab fa fa-file-pdf-o"></i> Paper</a>
+      <a href="https://github.com/vkola-lab/PodGPT/tree/main/PodGPT_Database_Inference"><i class="fa fa-github"></i> Codes</a>
+      <a href="https://www.medrxiv.org/content/10.64898/2026.04.16.26348910v1"><i class="fab fa fa-file-pdf-o"></i> Paper</a>
     </div><br>
-    Yanwu Xu, Li Sun, Wei Peng, <strong>Shuyue Jia</strong>, Katelyn Morrison, Adam Perer, Afrooz Zandifar, Shyam Visweswaran, Motahhare Eslami, Kayhan Batmanghelich
-    <br><em>IEEE Transactions on Medical Imaging</em> (IEEE T-MI)
+    Meysam Ahangaran, <strong>Shuyue Jia</strong>, Shlok Chitalia, Ambarish Athavale, Jean M. Francis, Michael William O’Donnell, Santhoshi Rupa Bavi, Uma Datta Gupta, Vijaya B. Kolachalama 
+    <br><em>Technical Report</em><br>
     <details>
       <summary style="outline:none">See More</summary>
       <ul>
         <div>
           <div style="text-align:center">
-            <img width="99%device-width" src="imgs/Research/MedSyn.jpg" alt="MedSyn Project">
+            <img width="99%device-width" src="imgs/PodGPT/Validation.png" alt="Medical Validation Project">
           </div>
         </div>
-        This work introduces an innovative methodology for producing high-quality 3D lung CT images guided by textual information. Specifically, we introduce a hierarchical scheme that uses a modified UNet architecture. We start by synthesizing low-resolution images conditioned on the text, serving as a foundation for subsequent generators for complete volumetric data. To ensure the anatomical plausibility of the generated samples, we provide further guidance by generating vascular, airway, and lobular segmentation masks in conjunction with the CT images.
+        We evaluate the performance of open-source LLMs in answering multiple-choice questions from the Nephrology Self-Assessment Program (NephSAP) to better understand their capabilities and limitations within this specialized clinical domain. For qualitative analysis, 3 board-certified nephrologists reviewed 40 randomly selected model responses (5 questions from each of 8 nephrology subject areas: <u>acute kidney injury (AKI) and critical care nephrology</u>, <u>chronic kidney disease (CKD) and progression</u>, <u>end stage renal disease (ESRD) and dialysis</u>, <u>fluids, electrolytes, and acid-base</u>, <u>glomerular, vascular, and tubulointerstitial disease</u>, <u>hypertension</u>, <u>renal bone disease, disorders of divalent ions, and nephrolithiasis</u>, and <u>transplantation</u>) to identify factual and clinical reasoning errors, with performance summarized as average error ratios based on the proportion of error-associated words per response.
       </ul>
     </details>
   </li>
@@ -784,13 +824,13 @@
   
 <hr>
 
-<h3 id="Computer Vision"><font color="black">Topic 2 - </font><font color="#DE3163">Computer Vision</font></h3>
+<h3 id="Computer Vision"><font color="black">Topic 3 - </font><font color="#DE3163">Computer Vision</font></h3>
 <ol>
   <li>
     <div style="float:left;">
       <font color="#00066f">No-reference Image Quality Assessment via Non-local Dependency Modeling</font>
     </div><br>
-    <strong>Shuyue Jia</strong>, Dingquan Li, Shiqi Wang
+    <strong>Shuyue Jia</strong>, Baoliang Chen, Dingquan Li, Shiqi Wang
     <div style="float:right;">
       <a href="./files/MMSP/MMSP22_Poster.pdf"><i class="fa fa-file-powerpoint-o"></i> Poster</a>
       <a href="./files/Presentation/A_Summary_Three_Projects.pdf"><i class="fa fa-file-powerpoint-o"></i> Slides</a>
@@ -839,7 +879,7 @@
 
 <hr>
 
-<h3 id="Neuroscience"><font color="black">Topic 3 - </font><font color="#DE3163">Neuroscience</font></h3>
+<h3 id="Brain-computer Interface"><font color="black">Topic 4 - </font><font color="#DE3163">Brain-computer Interface</font></h3>
 <ol>
   <li>
     <div style="float:left;">
@@ -877,7 +917,7 @@
     <div style="float:left;">
       <font color="#00066f">Deep Feature Mining via Attention-based BiLSTM-GCN for Human Motor Imagery Recognition</font>
     </div><br>
-    Yimin Hou, <strong>Shuyue Jia (Corresponding Author)</strong>, Xiangmin Lun, Shu Zhang, Jinglei Lv
+    <strong>Shuyue Jia</strong>, Yimin Hou, Xiangmin Lun, Shu Zhang, Jinglei Lv
     <div style="float:right;">
       <a href="./files/EEG/BiLSTM-GCN-Presentation.pdf"><i class="fa fa-file-powerpoint-o"></i> Slides</a>
       <a href="https://github.com/SuperBruceJia/EEG-DL"><i class="fa fa-github"></i> Codes</a>
@@ -940,7 +980,7 @@
 
 <hr>
 
-<h3 id="Intelligent Technologies"><font color="black">Topic 4 - </font><font color="#DE3163">Intelligent Technologies</font></h3>
+<h3 id="Intelligent Technologies"><font color="black">Topic 5 - </font><font color="#DE3163">Intelligent Technology</font></h3>
 <ol>
   <li>
     <div style="float:left;">
@@ -1000,6 +1040,7 @@
     <a href="https://www.jmir.org" style="color:black;">Journal of Medical Internet Research (JMIR)</a>
   </li>
   <li><strong>Conference Reviewer</strong> of<br>
+    <a href="https://neurips.cc" style="color:black;">Conference on Neural Information Processing Systems (NeurIPS) 2026</a><br>
     <a href="https://iclr.cc" style="color:black;">International Conference on Learning Representations (ICLR) 2025, 2026</a><br>
     <a href="https://2026.aclweb.org/calls/industry_track/" style="color:black;">Association for Computational Linguistics (ACL) Industry Track 2026</a>
   </li>
@@ -1008,8 +1049,9 @@
       <li><a href="https://ieeeboston.org" style="color:black;">Local Conference Committee, IEEE Boston Section</a></li>
       <li><a href="https://www.ieeesmc.org/2026-new-technical-committee-and-subcommittee-members/" style="color:black;">Technical Committee, Embodied AI Systems, IEEE Systems, Man, and Cybernetics (SMC) Society</a></li>
       <li><a href="https://2026.aclweb.org/calls/industry_track/" style="color:black;">Program Committee, The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026) Industry Track</a></li>
-      <li><a href="https://ieee-icad.org/icad-committee/" style="color:black;">Speaker Program Chair (Keynotes & Panel Sessions) and Steering Committee, 2026 IEEE International Conference on AI and Data Analytics (ICAD)</a></li>
-      <li><a href="https://ieee-icad.org/icad-committee/" style="color:black;">Speaker Program Chair (Keynotes & Panel Sessions) and Steering Committee, 2025 IEEE International Conference on AI and Data Analytics (ICAD)</a></li>
+      <li><a href="https://ieee-icad.org/icad-committee/" style="color:black;">Speaker Program Chair and Steering Committee, 2026 IEEE International Conference on AI and Data Analytics (ICAD)</a></li>
+      <li><a href="https://urtc.mit.edu" style="color:black;">Track Chair, 2025 IEEE MIT Undergraduate Research Technology Conference (MIT URTC)</a></li>
+      <li><a href="https://ieee-icad.org/icad-committee/" style="color:black;">Speaker Program Chair and Steering Committee, 2025 IEEE International Conference on AI and Data Analytics (ICAD)</a></li>
       <li><a href="https://amia.org/education-events/amia-2025-clinical-informatics-conference/spc" style="color:black;">Scientific Program Committee, 2025 AMIA Clinical Informatics Conference</a></li>
     </ul>
   </li>
@@ -1017,8 +1059,9 @@
   <li><strong>Active Volunteer</strong> of<br>
     <ul>
       <li><a href="https://ieeeboston.org" style="color:black;">IEEE Boston Section</a></li>
-      <li><a href="https://nucleate.org/locations/boston-ma/" style="color:black;">Communications Team, Nucleate Boston</a></li>
-      <li><a href="https://www.datadrivenpharma.com/" style="color:black;">DataDrivenPharma Forum & Conference events</a></li>
+      <li><a href="https://nucleate.org/locations/boston-ma/" style="color:black;">Nucleate Boston</a></li>
+      <li><a href="https://www.datadrivenpharma.com/" style="color:black;">DataDrivenPharma Conference</a></li>
+      <li><a href="https://www.roboticsinvest.tech" style="color:black;">Robotics Invest</a></li>
     </ul>
   </li>
 </ol>
