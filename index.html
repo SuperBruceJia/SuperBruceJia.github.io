@@ -69,6 +69,36 @@
     content: '→'; /* Unicode rightward arrow */
     margin-right: 8px; /* Add space between arrow and text */
   }
+
+  .pill-label {
+    display: inline-block;
+    background-color: #efece4; /* Light beige chip background */
+    border-radius: 6px;
+    padding: 1px 12px;
+  }
+
+  .news-tag {
+    display: inline-block;
+    font-size: 0.72em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 1px 10px;
+    border-radius: 999px;
+    border: 1px solid;
+    white-space: nowrap;
+    vertical-align: 0.08em;
+  }
+  .tag-paper        { color: #4f46a5; background-color: #edeafa; border-color: #cdc6f0; }
+  .tag-award        { color: #9a3b3b; background-color: #f9e9e9; border-color: #e5bebe; }
+  .tag-service      { color: #2f6b46; background-color: #e9f4ec; border-color: #bfdbc9; }
+  .tag-code         { color: #44506a; background-color: #eceff5; border-color: #c8cfdd; }
+  .tag-presentation { color: #0f6a72; background-color: #e4f3f4; border-color: #b6dde0; }
+  .tag-product      { color: #9a5b16; background-color: #fbf0e0; border-color: #eed6ae; }
+  .tag-benchmark    { color: #99366e; background-color: #f9e9f2; border-color: #eabfd8; }
+  .tag-editor       { color: #1d5aa7; background-color: #e7f0fb; border-color: #bbd4ef; }
+  .tag-model        { color: #2a7f8f; background-color: #e4f2f5; border-color: #b3dae2; }
+  .tag-proposal     { color: #6b6414; background-color: #f5f3df; border-color: #dcd7a4; }
+  .tag-thesis       { color: #7a4a2b; background-color: #f6ece4; border-color: #e0c6b2; }
 </style>
 
 <body>
@@ -107,24 +137,7 @@
   <br>
   
   𝗥𝗲𝘀𝗲𝗮𝗿𝗰𝗵 𝗜𝗻𝘁𝗲𝗿𝗲𝘀𝘁𝘀:<br>
-  My Ph.D. research focuses on developing autonomous AI systems grounded in real-world evidence that deliver safe, reliable, and extensible intelligence within real-world workflows. Specifically, I study: <b>AI Grounding on Real-world Evidence</b> [<a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2">Retrieval Grounding</a>, <a href="https://www.sciencedirect.com/science/article/pii/S1386505626000791">Attributional Grounding</a>, <a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106">Modality/Sequence Grounding</a>, <a href="">Temporal Grounding</a>, <a href="">Physical/Spatial Grounding</a>], <b>Specialized Intelligence</b> [<a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106v1">Visual Instruction Tuning</a>], and <b>Personalized Intelligence</b>. My long-term goal is to advance <b>Artificial General Intelligence (AGI) for Medicine</b> by building safe, reliable, and extensible foundations.
-
-  <details>
-    <summary style="outline:none">Research Topics</summary>
-    • AI-powered Autonomous Technology<br>
-    • AI for Human Health<br>
-    • AI & Data Infrastructure<br>
-    • Medical Imaging Foundation Model (FM)<br>
-    • Scientific Foundation Model (FM)<br>
-    • Brain–computer Interface (BCI)<br>
-    • Medical Image Analysis, Neuroimaging, EEG, and Neuroscience<br>
-    • Image/Video Processing, Understanding, and Quality Assessment<br>
-    • Large Language Model (LLM) and Large Vision-language Model (LVLM)<br>
-    • AI Workflow, LLM-based AI Agent, Vision-language Agent (VLA), and Multi-agent System (MAS)<br>
-    • Diffusion Probabilistic Model<br>
-    • Retrieval-augmented Generation (RAG) and Cross-modal Retrieval<br>
-    • Knowledge Graph and Information Retrieval
-  </details>
+  My Ph.D. research focuses on <b>developing scalable autonomous AI systems</b> grounded in real-world evidence that deliver safe, reliable, and extensible intelligence within real-world workflows. Specifically, I study: <b>AI Grounding on Real-world Evidence</b> [<a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2">Retrieval Grounding</a>, <a href="https://www.sciencedirect.com/science/article/pii/S1386505626000791">Attributional Grounding</a>, <a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106">Modality/Sequence Grounding</a>, <a href="">Temporal Grounding</a>, <a href="">Physical/Spatial Grounding</a>], <b>Specialized Intelligence</b> [<a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106v1">Visual Instruction Tuning</a>], and <b>Personalized Intelligence</b>. My long-term goal is to advance <b>Artificial General Intelligence (AGI) for Medicine</b> by building safe, reliable, and extensible foundations.
 
   <details>
   <summary style="outline:none">Research Focus Illustration</summary>
@@ -135,7 +148,7 @@
 
   <br>
 
-  <li>𝐀𝐈 & 𝐃𝐚𝐭𝐚 𝐈𝐧𝐟𝐫𝐚𝐬𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞
+  <li> <span class="pill-label">Representative projects</span> - 𝐀𝐈 & 𝐃𝐚𝐭𝐚 𝐈𝐧𝐟𝐫𝐚𝐬𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞
     <ul class="arrow-list">
       <li>Large-scale Model Training [<a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1.full.pdf">1</a>, <a href="https://www.nature.com/articles/s44385-025-00022-0">2</a>, <a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106v1.full.pdf">3</a>]</li>
       <li>Large-scale Model Inference & Deployment [<a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106v1">1</a>]</li>
@@ -144,14 +157,14 @@
     </ul>
   </li>
   
-  <li>𝐌𝐞𝐚𝐬𝐮𝐫𝐞𝐦𝐞𝐧𝐭
+  <li><span class="pill-label">Representative projects</span> - 𝐌𝐞𝐚𝐬𝐮𝐫𝐞𝐦𝐞𝐧𝐭
     <ul class="arrow-list">
       <li>Quality Estimation of Natural Language Generation (NLG)</li>
       <li>Quality Assessment of Natural Image [<a href="https://ieeexplore.ieee.org/abstract/document/9950035">1</a>, <a href="https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/ell2.12698">2</a>]</li>
     </ul>
   </li>
 
-  <li>𝐌𝐨𝐝𝐞𝐥𝐢𝐧𝐠
+  <li><span class="pill-label">Representative projects</span> - 𝐌𝐨𝐝𝐞𝐥𝐢𝐧𝐠
     <ul class="arrow-list">
       <li>Multimodal Foundation Model (FM) and Large Vision-language Model (LVLM) [<a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106v1">1</a>]</li>
       <li>AI Workflow, Agentic System, and Multi-agent System (MAS) [<a href="https://www.sciencedirect.com/science/article/pii/S1386505626000791">1</a>, <a href="https://aclanthology.org/2025.emnlp-main.893">2</a>]</li>
@@ -164,7 +177,7 @@
     </ul>
   </li>
 
-  <li>𝐎𝐩𝐭𝐢𝐦𝐢𝐳𝐚𝐭𝐢𝐨𝐧
+  <li><span class="pill-label">Representative projects</span> - 𝐎𝐩𝐭𝐢𝐦𝐢𝐳𝐚𝐭𝐢𝐨𝐧
     <ul class="arrow-list">
       <li>Continual Pre-training of LLM [<a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1">1</a>, <a href="https://www.nature.com/articles/s44385-025-00022-0">2</a>]</li>
       <li>Visual Instruction Tuning of VLM [<a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106v1">1</a>]</li>
@@ -172,7 +185,7 @@
     </ul>
   </li>
 
-  <li>𝐓𝐨𝐨𝐥𝐤𝐢𝐭 & 𝐋𝐢𝐛𝐫𝐚𝐫𝐲 (𝐎𝐩𝐞𝐧-𝐬𝐨𝐮𝐫𝐜𝐞 𝐏𝐫𝐨𝐣𝐞𝐜𝐭)
+  <li><span class="pill-label">Open-source projects</span> - 𝐓𝐨𝐨𝐥𝐤𝐢𝐭 & 𝐋𝐢𝐛𝐫𝐚𝐫𝐲
     <ul class="arrow-list">
       <li><a href="https://github.com/vkola-lab/PodGPT">PodGPT</a>: An audio-augmented LLM for research and education
         <iframe
@@ -217,7 +230,7 @@
     </ul>
   </li>
   
-  <li>𝐌𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐞𝐝 𝐆𝐢𝐭𝐇𝐮𝐛 𝐑𝐞𝐩𝐨 𝐟𝐨𝐫 𝐋𝐢𝐭𝐞𝐫𝐚𝐭𝐮𝐫𝐞 𝐒𝐮𝐫𝐯𝐞𝐲<br>
+  <li><span class="pill-label">Open-source projects</span> - 𝐆𝐢𝐭𝐇𝐮𝐛 𝐑𝐞𝐩𝐨 𝐟𝐨𝐫 𝐋𝐢𝐭𝐞𝐫𝐚𝐭𝐮𝐫𝐞 𝐒𝐮𝐫𝐯𝐞𝐲<br>
     <ul class="arrow-list">
       Welcome to contribute and work together!
       <li><a href="https://github.com/SuperBruceJia/Awesome-Large-Vision-Language-Model">Awesome Large Vision-Language Model (VLM)</a></li>
@@ -357,10 +370,6 @@
     </div>
     <div class="profile-container">
       <img width="99%device-width" src="./imgs/team/Research_at_BU_2024_Winter_1.jpg" /><br><br>
-      <p class="image-description">Our Research Team @ <a href="https://vkola-lab.github.io/team/">Kolachalama Laboratory</a></p>
-      <p class="image-description">BU Center for Computing & Data Sciences, Boston, MA (Winter 2024)</p>
-    </div>
-    <div class="profile-container">
       <img width="99%device-width" src="./imgs/team/Research_at_BU_2024_Winter_2.jpg" /><br><br>
       <p class="image-description">Our Research Team @ <a href="https://vkola-lab.github.io/team/">Kolachalama Laboratory</a></p>
       <p class="image-description">BU Center for Computing & Data Sciences, Boston, MA (Winter 2024)</p>
@@ -395,15 +404,12 @@
     </div>
     <div class="profile-container">
       <img width="99%device-width" src="./imgs/IEEE/IMG_2026_Summer_1.JPG" /><br><br>
-      <p class="image-description">Our IEEE Local Conference Committee Team @ <a href="https://ieeeboston.org">IEEE Boston Section</a></p>
-      <p class="image-description">Stokes Hall, Boston College, 140 Commonwealth Avenue, Chestnut Hill, MA (Summer 2026)</p>
       <img width="99%device-width" src="./imgs/IEEE/IMG_2026_Summer_3.jpg" /><br><br>
+      <img width="99%device-width" src="./imgs/IEEE/IMG_2026_Summer_4.jpg" /><br><br>
       <p class="image-description">Our IEEE Local Conference Committee Team @ <a href="https://ieeeboston.org">IEEE Boston Section</a></p>
       <p class="image-description">Stokes Hall, Boston College, 140 Commonwealth Avenue, Chestnut Hill, MA (Summer 2026)</p>
       <img width="99%device-width" src="./imgs/IEEE/IMG_2026_Summer_2.JPG" /><br><br>
-      <p class="image-description">Our IEEE Local Conference Committee Team @ <a href="https://ieeeboston.org">IEEE Boston Section</a></p>
-      <p class="image-description">Fulton Hall, Boston College, 140 Commonwealth Avenue, Chestnut Hill, MA (Summer 2026)</p>
-      <img width="99%device-width" src="./imgs/IEEE/IMG_2026_Summer_4.jpg" /><br><br>
+      <img width="99%device-width" src="./imgs/IEEE/IMG_2026_Summer_5.jpg" /><br><br>
       <p class="image-description">Our IEEE Local Conference Committee Team @ <a href="https://ieeeboston.org">IEEE Boston Section</a></p>
       <p class="image-description">Fulton Hall, Boston College, 140 Commonwealth Avenue, Chestnut Hill, MA (Summer 2026)</p>
     </div>
@@ -423,42 +429,42 @@
 </p>
 
 <h2 id="news">News</h2>
-<ul style="list-style:none; margin:0; padding:0">
+<ul style="list-style:none; margin:0; padding:0; max-height:340px; overflow-y:auto; padding-right:8px">
+  <!-- <li>
+    <strong>July 2026</strong> <span class="news-tag tag-editor">EDITOR</span> Invited to serve as a Part-time Editor for <em>Journal of Medical AI & Digital Therapeutics (JMAIDT)</em> and <em>Large Models and Embodied Intelligence (LMEI)</em>.
+  </li> -->
   <li>
-    <strong>Apr 2026</strong> Our <a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106v1">Video Foundation Model (𝐑𝐞𝐌𝐈𝐍𝐃) for Multi-sequence Brain MRI</a> is now available online. It is the clinical reasoning layer for brain MRI. Explore <a href="https://remind.bu.edu">https://remind.bu.edu</a> NOW.
+    <strong>Apr 2026</strong> <span class="news-tag tag-product">PRODUCT</span> Our <a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106v1">Video Foundation Model (𝐑𝐞𝐌𝐈𝐍𝐃) for Multi-sequence Brain MRI</a> is now available online. It is the clinical reasoning layer for brain MRI. Explore <a href="https://remind.bu.edu">https://remind.bu.edu</a> NOW.
   </li>
   <li>
-    <strong>Mar 2026</strong> I am glad to join the 2026 cohort of the Thinking About Thinking Fellowship Programme!
+    <strong>Mar 2026</strong> <span class="news-tag tag-service">SERVICE</span> I will serve as a Technical Committee member on Embodied AI Systems for the IEEE Systems, Man, and Cybernetics (SMC) Society.
   </li>
   <li>
-    <strong>Mar 2026</strong> I will serve as a Technical Committee member on Embodied AI Systems for the IEEE Systems, Man, and Cybernetics (SMC) Society.
+    <strong>Jan 2026</strong> <span class="news-tag tag-paper">PAPER</span> Our <a href="https://www.sciencedirect.com/science/article/pii/S1386505626000791"> Medical Agentic RAG System</a> is accepted by <em>International Journal of Medical Informatics</em>!
   </li>
   <li>
-    <strong>Jan 2026</strong> Our <a href="https://www.sciencedirect.com/science/article/pii/S1386505626000791"> Medical Agentic RAG System</a> is accepted by <em>International Journal of Medical Informatics</em>!
+    <strong>Jan 2026</strong> <span class="news-tag tag-service">SERVICE</span> I will serve as a Program Committee member for ACL 2026 (Industry Track).
   </li>
   <li>
-    <strong>Jan 2026</strong> I will serve as a Program Committee member for ACL 2026 (Industry Track).
+    <strong>Nov 2025</strong> <span class="news-tag tag-service">SERVICE</span> I was appointed as the Area Chair for the IEEE Boston Section Circuits and Systems (CAS) Society.
   </li>
   <li>
-    <strong>Nov 2025</strong> I was appointed as the Area Chair for the IEEE Boston Section Circuits and Systems (CAS) Society.
+    <strong>Oct 2025</strong> <span class="news-tag tag-service">SERVICE</span> I will serve as a Technical Track Co-chair for IEEE MIT URTC 2025.
   </li>
   <li>
-    <strong>Oct 2025</strong> I will serve as a Technical Track Co-chair for IEEE MIT URTC 2025.
+    <strong>Aug 2025</strong> <span class="news-tag tag-service">SERVICE</span> I will serve as the Speaker Program Chair (Keynotes & Panel Sessions) and a Steering Committee member for IEEE ICAD 2026.
   </li>
   <li>
-    <strong>Aug 2025</strong> I will serve as the Speaker Program Chair (Keynotes & Panel Sessions) and a Steering Committee member for IEEE ICAD 2026.
+    <strong>Aug 2025</strong> <span class="news-tag tag-paper">PAPER</span> Our paper <a href="https://aclanthology.org/2025.emnlp-main.893">Multi-agent System for Document Intelligence</a> is accepted by <em>EMNLP 2025</em>.
   </li>
   <li>
-    <strong>Aug 2025</strong> Our paper <a href="https://aclanthology.org/2025.emnlp-main.893">Multi-agent System for Document Intelligence</a> is accepted by <em>EMNLP 2025</em>.
+    <strong>Aug 2025</strong> <span class="news-tag tag-presentation">PRESENTATION</span> A <a href="./files/Presentation/Evidence-Retrieval-and-Grounding.pdf"> Presentation</a> of Evidence Retrieval and Grounding in Medicine.
   </li>
   <li>
-    <strong>Aug 2025</strong> A <a href="./files/Presentation/Evidence-Retrieval-and-Grounding.pdf"> Presentation</a> of Evidence Retrieval and Grounding in Medicine.
+    <strong>Aug 2025</strong> <span class="news-tag tag-paper">PAPER</span> Our <a href="https://www.medrxiv.org/content/10.1101/2025.08.06.25333160v1"> Medical Agentic RAG System</a> is available online!
   </li>
   <li>
-    <strong>Aug 2025</strong> Our <a href="https://www.medrxiv.org/content/10.1101/2025.08.06.25333160v1"> Medical Agentic RAG System</a> is available online!
-  </li>
-  <li>
-    <strong>July 2025</strong> Open Source <a href="https://github.com/SuperBruceJia/Awesome-Text-Generation-Evaluation"> Awesome Text Generation Evaluation</a>, a curated list of evaluation metrics for Natural Language Generation (NLG)
+    <strong>July 2025</strong> <span class="news-tag tag-code">CODE</span> Open Source <a href="https://github.com/SuperBruceJia/Awesome-Text-Generation-Evaluation"> Awesome Text Generation Evaluation</a>, a curated list of evaluation metrics for Natural Language Generation (NLG)
     <iframe
       src="https://img.shields.io/github/stars/SuperBruceJia/Awesome-Text-Generation-Evaluation?style=social" 
       frameborder="0" scrolling="0" width="82px" height="20px">
@@ -469,28 +475,28 @@
     </iframe>.
   </li>
   <li>
-    <strong>May 2025</strong> Our paper <a href="https://www.nature.com/articles/s44385-025-00022-0">PodGPT</a> is accepted by <em>Nature npj Biomedical Innovations</em>.
+    <strong>May 2025</strong> <span class="news-tag tag-paper">PAPER</span> Our paper <a href="https://www.nature.com/articles/s44385-025-00022-0">PodGPT</a> is accepted by <em>Nature npj Biomedical Innovations</em>.
   </li>
   <li>
-    <strong>Mar 2025</strong> Honored to receive the 𝟮𝟬𝟮𝟱 𝗜𝗘𝗘𝗘 𝗕𝗼𝘀𝘁𝗼𝗻 𝗦𝗲𝗰𝘁𝗶𝗼𝗻 𝗔𝗿𝘁𝗵𝘂𝗿 𝗪𝗶𝗻𝘀𝘁𝗼𝗻 𝗦𝘁𝘂𝗱𝗲𝗻𝘁 𝗔𝘄𝗮𝗿𝗱 from the <a href="https://ieeeboston.org/">IEEE Boston Section</a>, <em>"For outstanding contributions to the Boston Section Local Conference Committee"</em>.
+    <strong>Mar 2025</strong> <span class="news-tag tag-award">AWARD</span> Honored to receive the 𝟮𝟬𝟮𝟱 𝗜𝗘𝗘𝗘 𝗕𝗼𝘀𝘁𝗼𝗻 𝗦𝗲𝗰𝘁𝗶𝗼𝗻 𝗔𝗿𝘁𝗵𝘂𝗿 𝗪𝗶𝗻𝘀𝘁𝗼𝗻 𝗦𝘁𝘂𝗱𝗲𝗻𝘁 𝗔𝘄𝗮𝗿𝗱 from the <a href="https://ieeeboston.org/">IEEE Boston Section</a>, <em>"For outstanding contributions to the Boston Section Local Conference Committee"</em>.
   </li>
   <li>
-    <strong>Dec 2024</strong> I will serve as a Scientific Program Committee member for AMIA 2025 Clinical Informatics Conference.
+    <strong>Dec 2024</strong> <span class="news-tag tag-service">SERVICE</span> I will serve as a Scientific Program Committee member for AMIA 2025 Clinical Informatics Conference.
   </li>
   <li>
-    <strong>Dec 2024</strong> We have released the source code for our <a href="https://github.com/vkola-lab/PodGPT/tree/main/rag_pipeline"> PodGPT with Retrieval-Augmented Generation (RAG)</a>. This powerful pipeline allows our model to ground responses with the latest scientific evidence from top-tier literature, such as <em>The New England Journal of Medicine</em> (NEJM)!
+    <strong>Dec 2024</strong> <span class="news-tag tag-code">CODE</span> We have released the source code for our <a href="https://github.com/vkola-lab/PodGPT/tree/main/rag_pipeline"> PodGPT with Retrieval-Augmented Generation (RAG)</a>. This powerful pipeline allows our model to ground responses with the latest scientific evidence from top-tier literature, such as <em>The New England Journal of Medicine</em> (NEJM)!
   </li>
   <li>
-    <strong>Nov 2024</strong> Our <a href="https://www.nature.com/articles/s44385-025-00022-0"> PodGPT preprint</a> is available online! It is an audio-augmented Large Language Model (LLM) for STEMM research and education.
+    <strong>Nov 2024</strong> <span class="news-tag tag-paper">PAPER</span> Our <a href="https://www.nature.com/articles/s44385-025-00022-0"> PodGPT preprint</a> is available online! It is an audio-augmented Large Language Model (LLM) for STEMM research and education.
   </li>
   <li>
-    <strong>Oct 2024</strong> We have launched <b>PodRAG</b> on our <a href="https://podgpt.org/">PodGPT</a> platform with the advanced 𝗥𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹-𝗔𝘂𝗴𝗺𝗲𝗻𝘁𝗲𝗱 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗼𝗻 (𝗥𝗔𝗚) techniques! It is designed to provide 𝘁𝗵𝗲 𝗺𝗼𝘀𝘁 𝗮𝗰𝗰𝘂𝗿𝗮𝘁𝗲 𝗮𝗻𝗱 𝘂𝗽-𝘁𝗼-𝗱𝗮𝘁𝗲 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 for medical education and research! Please try it out if you are interested!
+    <strong>Oct 2024</strong> <span class="news-tag tag-product">PRODUCT</span> We have launched <b>PodRAG</b> on our <a href="https://podgpt.org/">PodGPT</a> platform with the advanced 𝗥𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹-𝗔𝘂𝗴𝗺𝗲𝗻𝘁𝗲𝗱 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗼𝗻 (𝗥𝗔𝗚) techniques! It is designed to provide 𝘁𝗵𝗲 𝗺𝗼𝘀𝘁 𝗮𝗰𝗰𝘂𝗿𝗮𝘁𝗲 𝗮𝗻𝗱 𝘂𝗽-𝘁𝗼-𝗱𝗮𝘁𝗲 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 for medical education and research! Please try it out if you are interested!
   </li>
   <li>
-    <strong>Aug 2024</strong> I will serve as the Speaker Program Chair (Keynotes & Panel Sessions) and a Steering Committee member for IEEE ICAD 2025.
+    <strong>Aug 2024</strong> <span class="news-tag tag-service">SERVICE</span> I will serve as the Speaker Program Chair (Keynotes & Panel Sessions) and a Steering Committee member for IEEE ICAD 2025.
   </li>
   <li>
-    <strong>Aug 2024</strong> Open Source and Keep Updating <a href="https://github.com/SuperBruceJia/Awesome-Large-Vision-Language-Model"> Awesome Large Vision-Language Model (LVLM/MM-LLM)</a>, a curated list of Large Vision-Language Model
+    <strong>Aug 2024</strong> <span class="news-tag tag-code">CODE</span> Open Source and Keep Updating <a href="https://github.com/SuperBruceJia/Awesome-Large-Vision-Language-Model"> Awesome Large Vision-Language Model (LVLM/MM-LLM)</a>, a curated list of Large Vision-Language Model
     <iframe
       src="https://img.shields.io/github/stars/SuperBruceJia/Awesome-Large-Vision-Language-Model?style=social"
       frameborder="0" scrolling="0" width="82px" height="20px">
@@ -510,10 +516,10 @@
     Welcome to contribute and work together!
   </li>
   <li>
-    <strong>Aug 2024</strong> Release and maintain a collection of <a href="https://huggingface.co/collections/shuyuej/quantization-669ea25d2ea444924e543da2"> &#129303;&#32; Quantized Large Language Models</a> for public usage, offering AI solutions with reduced computational requirements.
+    <strong>Aug 2024</strong> <span class="news-tag tag-model">MODEL</span> Release and maintain a collection of <a href="https://huggingface.co/collections/shuyuej/quantization-669ea25d2ea444924e543da2"> &#129303;&#32; Quantized Large Language Models</a> for public usage, offering AI solutions with reduced computational requirements.
   </li>
   <li>
-    <strong>July 2024</strong> Open Source <a href="https://github.com/vkola-lab/PodGPT"> PodGPT Library</a>, a library for benchmarking multilingual medical Large Language Models (Medical LLMs)
+    <strong>July 2024</strong> <span class="news-tag tag-code">CODE</span> Open Source <a href="https://github.com/vkola-lab/PodGPT"> PodGPT Library</a>, a library for benchmarking multilingual medical Large Language Models (Medical LLMs)
     <iframe
       src="https://img.shields.io/github/stars/vkola-lab/PodGPT" 
       frameborder="0" scrolling="0" width="82px" height="20px">
@@ -524,22 +530,22 @@
     </iframe>.
   </li>
   <li>
-    <strong>July 2024</strong> Our <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> MedPodGPT preprint</a> is available online! It is an audio-augmented Large Language Model (LLM) for medical research and education.
+    <strong>July 2024</strong> <span class="news-tag tag-paper">PAPER</span> Our <a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1"> MedPodGPT preprint</a> is available online! It is an audio-augmented Large Language Model (LLM) for medical research and education.
   </li>
   <li>
-    <strong>June 2024</strong> Our AI Platform, <a href="https://podgpt.org/"> PodGPT</a>, is now accessible to the general public. It is an online platform for deploying our latest multimodal foundation models for education and research.
+    <strong>June 2024</strong> <span class="news-tag tag-product">PRODUCT</span> Our AI Platform, <a href="https://podgpt.org/"> PodGPT</a>, is now accessible to the general public. It is an online platform for deploying our latest multimodal foundation models for education and research.
   </li>
   <li>
-    <strong>June 2024</strong> Our paper <a href="https://ieeexplore.ieee.org/document/10566053"> MedSyn</a> is accepted by <em>IEEE T-MI</em>.
+    <strong>June 2024</strong> <span class="news-tag tag-paper">PAPER</span> Our paper <a href="https://ieeexplore.ieee.org/document/10566053"> MedSyn</a> is accepted by <em>IEEE T-MI</em>.
   </li>
   <li>
-    <strong>May 2024</strong> 𝗣𝗵.𝗗. 𝗖𝗮𝗻𝗱𝗶𝗱𝗮𝗰𝘆 𝗥𝗲𝗽𝗼𝗿𝘁: <a href="./files/PhD_Candidacy/PhD_Candidacy_Report_Shuyue_Jia_May_2024.pdf">Preference Alignment via Reinforcement Learning from Human Feedback</a> and 𝗣𝗿𝗲𝘀𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻: <a href="./files/PhD_Candidacy/PhD_Candidacy_Presentation_Shuyue_Jia_May_2024.pdf">Slides</a>.
+    <strong>May 2024</strong> <span class="news-tag tag-presentation">PRESENTATION</span> 𝗣𝗵.𝗗. 𝗖𝗮𝗻𝗱𝗶𝗱𝗮𝗰𝘆 𝗥𝗲𝗽𝗼𝗿𝘁: <a href="./files/PhD_Candidacy/PhD_Candidacy_Report_Shuyue_Jia_May_2024.pdf">Preference Alignment via Reinforcement Learning from Human Feedback</a> and 𝗣𝗿𝗲𝘀𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻: <a href="./files/PhD_Candidacy/PhD_Candidacy_Presentation_Shuyue_Jia_May_2024.pdf">Slides</a>.
   </li>
   <li>
-    <strong>Jan 2024</strong> 🔥 We are releasing <a href="https://huggingface.co/datasets/shuyuej/GSM8K-Consistency">&#129303;&#32;GSM8K-Consistency</a>, a benchmark database for analyzing the consistency of Arithmetic Reasoning on GSM8K.
+    <strong>Jan 2024</strong> <span class="news-tag tag-benchmark">BENCHMARK</span> 🔥 We are releasing <a href="https://huggingface.co/datasets/shuyuej/GSM8K-Consistency">&#129303;&#32;GSM8K-Consistency</a>, a benchmark database for analyzing the consistency of Arithmetic Reasoning on GSM8K.
   </li>
   <li>
-    <strong>Dec 2023</strong> Open Source <a href="https://github.com/SuperBruceJia/promptcraft"> 🔨 PromptCraft</a> and its published <a href="https://pypi.org/project/promptcraft"> PyPI Package</a>, a prompt perturbation toolkit from the character, word, and sentence levels for prompt robustness analysis
+    <strong>Dec 2023</strong> <span class="news-tag tag-code">CODE</span> Open Source <a href="https://github.com/SuperBruceJia/promptcraft"> 🔨 PromptCraft</a> and its published <a href="https://pypi.org/project/promptcraft"> PyPI Package</a>, a prompt perturbation toolkit from the character, word, and sentence levels for prompt robustness analysis
     <iframe
       src="https://img.shields.io/github/stars/SuperBruceJia/promptcraft?style=social" 
       frameborder="0" scrolling="0" width="82px" height="20px">
@@ -550,7 +556,7 @@
     </iframe>.
   </li>
   <li>
-    <strong>Oct 2023</strong> Open Source <a href="https://github.com/SuperBruceJia/Awesome-Semantic-Textual-Similarity"> Awesome Semantic Textual Similarity</a>, a curated list of Semantic/Sentence Textual Similarity (STS) in Large Language Models (LLMs) and Natural Language Processing (NLP)
+    <strong>Oct 2023</strong> <span class="news-tag tag-code">CODE</span> Open Source <a href="https://github.com/SuperBruceJia/Awesome-Semantic-Textual-Similarity"> Awesome Semantic Textual Similarity</a>, a curated list of Semantic/Sentence Textual Similarity (STS) in Large Language Models (LLMs) and Natural Language Processing (NLP)
     <iframe
       src="https://img.shields.io/github/stars/SuperBruceJia/Awesome-Semantic-Textual-Similarity?style=social" 
       frameborder="0" scrolling="0" width="82px" height="20px">
@@ -561,10 +567,10 @@
     </iframe>.
   </li>
   <li>
-    <strong>Oct 2023</strong> A <a href="./files/Presentation/Sentence_Textual_Similarity-Model_Evolution_Overview.pdf"> Presentation</a> of Sentence Textual Similarity: Model Evolution Overview.
+    <strong>Oct 2023</strong> <span class="news-tag tag-presentation">PRESENTATION</span> A <a href="./files/Presentation/Sentence_Textual_Similarity-Model_Evolution_Overview.pdf"> Presentation</a> of Sentence Textual Similarity: Model Evolution Overview.
   </li>
   <li>
-    <strong>Oct 2023</strong> Open Source <a href="https://github.com/SuperBruceJia/Awesome-LLM-Self-Consistency"> Awesome LLM Self-Consistency</a>, a curated paper and presentation list of self-consistency in Large Language Models (LLMs)
+    <strong>Oct 2023</strong> <span class="news-tag tag-code">CODE</span> Open Source <a href="https://github.com/SuperBruceJia/Awesome-LLM-Self-Consistency"> Awesome LLM Self-Consistency</a>, a curated paper and presentation list of self-consistency in Large Language Models (LLMs)
     <iframe
       src="https://img.shields.io/github/stars/SuperBruceJia/Awesome-LLM-Self-Consistency?style=social" 
       frameborder="0" scrolling="0" width="90px" height="20px">
@@ -575,31 +581,31 @@
     </iframe>.
   </li>
   <li>
-    <strong>Oct 2023</strong> A <a href="./files/Presentation/Prompt-Perturbation-and-Robustness-Evaluation-2023-Shuyue-JIA.pdf"> Presentation</a> of Prompt Perturbation and Robustness Evaluation.
+    <strong>Oct 2023</strong> <span class="news-tag tag-presentation">PRESENTATION</span> A <a href="./files/Presentation/Prompt-Perturbation-and-Robustness-Evaluation-2023-Shuyue-JIA.pdf"> Presentation</a> of Prompt Perturbation and Robustness Evaluation.
   </li>
   <li>
-    <strong>Sept 2023</strong> A <a href="./files/Presentation/Prompt-based-Learning-and-Robustness-Evaluation-2023-Shuyue-JIA.pdf"> Presentation</a> of Prompt-based Learning and Robustness Evaluation.
+    <strong>Sept 2023</strong> <span class="news-tag tag-presentation">PRESENTATION</span> A <a href="./files/Presentation/Prompt-based-Learning-and-Robustness-Evaluation-2023-Shuyue-JIA.pdf"> Presentation</a> of Prompt-based Learning and Robustness Evaluation.
   </li>
   <li>
-    <strong>Sept 2023</strong> A <a href="./files/Presentation/Self-Consistency-Benefits-Large-Language-Models-2023-Shuyue-JIA.pdf"> Presentation</a> of Self-Consistency Benefits Large Language Models.
+    <strong>Sept 2023</strong> <span class="news-tag tag-presentation">PRESENTATION</span> A <a href="./files/Presentation/Self-Consistency-Benefits-Large-Language-Models-2023-Shuyue-JIA.pdf"> Presentation</a> of Self-Consistency Benefits Large Language Models.
   </li>
   <li>
-    <strong>Sept 2023</strong> Our paper <a href="https://ieeexplore.ieee.org/abstract/document/10251073/"> Deep Transfer Learning</a> is accepted by <em>IEEE T-IM</em>.
+    <strong>Sept 2023</strong> <span class="news-tag tag-paper">PAPER</span> Our paper <a href="https://ieeexplore.ieee.org/abstract/document/10251073/"> Deep Transfer Learning</a> is accepted by <em>IEEE T-IM</em>.
   </li>
   <li>
-    <strong>May 2023</strong> 𝗠.𝗣𝗵𝗶𝗹.𝗧𝗵𝗲𝘀𝗶𝘀: <a href="https://scholars.cityu.edu.hk/en/theses/noreference-image-quality-assessment-via-nonlocal-modeling(2d1e72fb-2405-43df-aac9-4838b6da1875).html"> No-reference Image Quality Assessment via Non-local Modeling</a> and 𝗗𝗲𝗳𝗲𝗻𝘀𝗲 𝗦𝗹𝗶𝗱𝗲𝘀: <a href="./files/Thesis/MPhil-Thesis-Defense-Presentation-ShuyueJia.pdf"> Image Quality Assessment and Perceptual Optimization: A Non-local Modeling Approach</a>.
+    <strong>May 2023</strong> <span class="news-tag tag-thesis">THESIS</span> 𝗠.𝗣𝗵𝗶𝗹.𝗧𝗵𝗲𝘀𝗶𝘀: <a href="https://scholars.cityu.edu.hk/en/theses/noreference-image-quality-assessment-via-nonlocal-modeling(2d1e72fb-2405-43df-aac9-4838b6da1875).html"> No-reference Image Quality Assessment via Non-local Modeling</a> and 𝗗𝗲𝗳𝗲𝗻𝘀𝗲 𝗦𝗹𝗶𝗱𝗲𝘀: <a href="./files/Thesis/MPhil-Thesis-Defense-Presentation-ShuyueJia.pdf"> Image Quality Assessment and Perceptual Optimization: A Non-local Modeling Approach</a>.
   </li>
   <li>
-    <strong>Mar 2023</strong> A <a href="./files/Presentation/Foundation-Models-Sequential-Decision-Making.pdf"> Presentation</a> of Foundation Models for Sequential Decision Making.
+    <strong>Mar 2023</strong> <span class="news-tag tag-presentation">PRESENTATION</span> A <a href="./files/Presentation/Foundation-Models-Sequential-Decision-Making.pdf"> Presentation</a> of Foundation Models for Sequential Decision Making.
   </li>
   <li>
-    <strong>Jan 2023</strong> A <a href="./files/Presentation/A_Summary_Three_Projects.pdf"> Presentation</a> of IQA Regression and EEG Classification.
+    <strong>Jan 2023</strong> <span class="news-tag tag-presentation">PRESENTATION</span> A <a href="./files/Presentation/A_Summary_Three_Projects.pdf"> Presentation</a> of IQA Regression and EEG Classification.
   </li>
   <li>
-    <strong>Nov 2022</strong> A <a href="./files/Proposal/Research_Proposal_VPS.pdf"> Research Proposal</a> of Video Panoptic Segmentation (VPS).
+    <strong>Nov 2022</strong> <span class="news-tag tag-proposal">PROPOSAL</span> A <a href="./files/Proposal/Research_Proposal_VPS.pdf"> Research Proposal</a> of Video Panoptic Segmentation (VPS).
   </li>
   <li>
-    <strong>Aug 2022</strong> Our paper <a href="https://ieeexplore.ieee.org/document/9889159"> GCNs-Net</a> is accepted by <em>IEEE T-NNLS</em>
+    <strong>Aug 2022</strong> <span class="news-tag tag-paper">PAPER</span> Our paper <a href="https://ieeexplore.ieee.org/document/9889159"> GCNs-Net</a> is accepted by <em>IEEE T-NNLS</em>
     <iframe
       src="https://img.shields.io/github/stars/SuperBruceJia/EEG-DL?style=social" 
       frameborder="0" scrolling="0" width="90px" height="20px">
@@ -610,7 +616,7 @@
     </iframe>.
   </li>
   <li>
-    <strong>Aug 2022</strong> Our paper <a href="https://ieeexplore.ieee.org/abstract/document/9950035"> Non-local Modeling</a> is accepted by <em>IEEE MMSP</em>. Source codes are available on <a href="https://github.com/SuperBruceJia/NLNet-IQA">&#32;GitHub</a>
+    <strong>Aug 2022</strong> <span class="news-tag tag-paper">PAPER</span> Our paper <a href="https://ieeexplore.ieee.org/abstract/document/9950035"> Non-local Modeling</a> is accepted by <em>IEEE MMSP</em>. Source codes are available on <a href="https://github.com/SuperBruceJia/NLNet-IQA">&#32;GitHub</a>
     <iframe
       src="https://img.shields.io/github/stars/SuperBruceJia/NLNet-IQA?style=social"
       frameborder="0" scrolling="0" width="90px" height="20px">
@@ -621,10 +627,10 @@
     </iframe>, and the trained models are available on <a href="https://huggingface.co/shuyuej/NLNet">&#129303;&#32;HuggingFace</a> for real-life IQA inference.
   </li>
   <li>
-    <strong>Dec 2021</strong> Our paper <a href="https://www.frontiersin.org/article/10.3389/fbioe.2021.706229"> BiLSTM-GCNs</a> is accepted by <em>Frontiers in Bioengineering and Biotechnology</em>.
+    <strong>Dec 2021</strong> <span class="news-tag tag-paper">PAPER</span> Our paper <a href="https://www.frontiersin.org/article/10.3389/fbioe.2021.706229"> BiLSTM-GCNs</a> is accepted by <em>Frontiers in Bioengineering and Biotechnology</em>.
   </li>
   <li>
-    <strong>Apr 2020</strong> Open Source <a href="https://github.com/SuperBruceJia/EEG-DL"> EEG-DL</a>, a Deep Learning (DL) library written by TensorFlow for EEG Signals Classification
+    <strong>Apr 2020</strong> <span class="news-tag tag-code">CODE</span> Open Source <a href="https://github.com/SuperBruceJia/EEG-DL"> EEG-DL</a>, a Deep Learning (DL) library written by TensorFlow for EEG Signals Classification
     <iframe
       src="https://img.shields.io/github/stars/SuperBruceJia/EEG-DL?style=social" 
       frameborder="0" scrolling="0" width="90px" height="20px">
@@ -635,7 +641,7 @@
     </iframe>.
   </li>
   <li>
-    <strong>Feb 2020</strong> Our paper<a href="https://iopscience.iop.org/article/10.1088/1741-2552/ab4af6/meta"> ESI-CNNs</a> is accepted by <em>Journal of Neural Engineering</em> 
+    <strong>Feb 2020</strong> <span class="news-tag tag-paper">PAPER</span> Our paper<a href="https://iopscience.iop.org/article/10.1088/1741-2552/ab4af6/meta"> ESI-CNNs</a> is accepted by <em>Journal of Neural Engineering</em> 
     <iframe
       src="https://img.shields.io/github/stars/SuperBruceJia/EEG-Motor-Imagery-Classification-CNNs-TensorFlow?style=social"
       frameborder="0" scrolling="0" width="90px" height="20px">
@@ -647,8 +653,8 @@
   </li>
 </ul>
 
-<h2 id="Highlights">Highlights</h2>
-<h3 id="Generative AI"><font color="black">Topic 1 - </font><font color="#DE3163">Medical Imaging Foundation Model</font></h3>
+<h2 id="Research Topics">Research Topics</h2>
+<h3 id="Scalable Medical Imaging & Scientific Foundation Model"><font color="black">Topic 1 - </font><font color="#DE3163">Scalable Medical Imaging & Scientific Foundation Model</font></h3>
 <ol>
   <li>
     <div style="float:left;">
@@ -707,70 +713,7 @@
       </ul>
     </details>
   </li>
-</ol>
 
-<hr>
-
-<h3 id="Generative AI"><font color="black">Topic 2 - </font><font color="#DE3163">Scientific Foundation Model</font></h3>
-<ol>
-  <li>
-    <div style="float:left;">
-      <font color="#00066f">Agentic Memory-augmented Retrieval and Evidence Grounding for Medical Question-answering Tasks</font>
-    </div>
-    <div style="float:right;">
-      <a href="./files/Presentation/Evidence-Retrieval-and-Grounding.pdf"><i class="fa fa-file-powerpoint-o"></i> Slides</a>
-      <a href="./files/Manuscripts/Tool_using_AI_agent_2025.pdf"><i class="fab fa fa-file-pdf-o"></i> Manuscript</a>
-      <a href="https://www.sciencedirect.com/science/article/pii/S1386505626000791"><i class="fab fa fa-file-pdf-o"></i> Paper</a>
-      <a href="https://ars.els-cdn.com/content/image/1-s2.0-S1386505626000791-mmc1.pdf"><i class="fab fa fa-file-pdf-o"></i> Supplementary Material</a>
-    </div><br>
-    <strong>Shuyue Jia</strong>, Subhrangshu Bit, Varuna H. Jasodanand, Yi Liu, Vijaya B. Kolachalama
-    <br><em>International Journal of Medical Informatics</em><br>
-    <b>Dataset scale</b>: >30M documents, >68M snippets<br>
-    <b>Model scale</b>: 72B (equipped with 5 designed tools)<br>
-    <b>Compute scale</b>: 4 L40S GPUs (48GB memory)<br>
-    <b>Our vision</b>: AI-powered precision medical evidence for everyone, everywhere.<br>
-    <details>
-      <summary style="outline:none">See More</summary>
-      <ul>
-        <div>
-          <div style="text-align:center">
-            <img width="99%device-width" src="imgs/Agent/Medical-Agent.jpg" alt="Medical AI Agent Project">
-          </div>
-        </div>
-        <div>
-          <div style="text-align:center">
-            <img width="99%device-width" src="imgs/Agent/Tool-Description.jpg" alt="Tool Description">
-          </div>
-        </div>
-        We developed a unified, open-source LLM-based agentic system that integrates document retrieval, re-ranking, evidence grounding, and diagnosis generation to support dynamic, multi-step medical reasoning. Our system features a lightweight retrieval-augmented generation pipeline coupled with a cache-and-prune memory bank, enabling efficient long-context inference beyond standard LLM limits. The system autonomously invokes specialized tools, eliminating the need for manual prompt engineering or brittle multi-stage templates.
-      </ul>
-    </details>
-  </li>
-
-  <hr>
-  
-  <li>
-    <div style="float:left;">
-      <font color="#00066f">DocAgent: An Agentic Framework for Multi-modal Long-context Document Understanding</font>
-    </div>
-    <div style="float:right;">
-      <a href="https://aclanthology.org/2025.emnlp-main.893"><i class="fab fa fa-file-pdf-o"></i> Paper</a>
-    </div><br>
-    Li Sun, Liu He, <strong>Shuyue Jia</strong>, Yangfan He, Chenyu You
-    <br><em>The 2025 Conference on Empirical Methods in Natural Language Processing</em> (EMNLP 2025)
-    <details>
-      <summary style="outline:none">See More</summary>
-      <ul>
-        <div>
-          <div style="text-align:center">
-            <img width="99%device-width" src="imgs/Agent/DocAgent.jpg" alt="Document AI Agent Project">
-          </div>
-        </div>
-        We introduce DocAgent, a multi-agent framework for long-context document understanding that imitates the human reading practice. Specifically, we first extract a structured, tree-formatted outline from documents to help agents identify relevant sections efficiently. Further, we develop an interactive reading interface that enables agents to query and retrieve various types of content dynamically. To ensure answer reliability, we introduce a reviewer agent that cross-checks responses using complementary sources and maintains a task-agnostic memory bank to facilitate knowledge sharing across tasks. 
-      </ul>
-    </details>
-  </li>
-  
   <hr>
 
   <li>
@@ -859,6 +802,69 @@
     </details>
   </li>
 </ol>
+
+<hr>
+
+<h3 id="AI-powered Autonomous Technology"><font color="black">Topic 2 - </font><font color="#DE3163">AI-powered Autonomous Technology</font></h3>
+<ol>
+  <li>
+    <div style="float:left;">
+      <font color="#00066f">Agentic Memory-augmented Retrieval and Evidence Grounding for Medical Question-answering Tasks</font>
+    </div>
+    <div style="float:right;">
+      <a href="./files/Presentation/Evidence-Retrieval-and-Grounding.pdf"><i class="fa fa-file-powerpoint-o"></i> Slides</a>
+      <a href="./files/Manuscripts/Tool_using_AI_agent_2025.pdf"><i class="fab fa fa-file-pdf-o"></i> Manuscript</a>
+      <a href="https://www.sciencedirect.com/science/article/pii/S1386505626000791"><i class="fab fa fa-file-pdf-o"></i> Paper</a>
+      <a href="https://ars.els-cdn.com/content/image/1-s2.0-S1386505626000791-mmc1.pdf"><i class="fab fa fa-file-pdf-o"></i> Supplementary Material</a>
+    </div><br>
+    <strong>Shuyue Jia</strong>, Subhrangshu Bit, Varuna H. Jasodanand, Yi Liu, Vijaya B. Kolachalama
+    <br><em>International Journal of Medical Informatics</em><br>
+    <b>Dataset scale</b>: >30M documents, >68M snippets<br>
+    <b>Model scale</b>: 72B (equipped with 5 designed tools)<br>
+    <b>Compute scale</b>: 4 L40S GPUs (48GB memory)<br>
+    <b>Our vision</b>: AI-powered precision medical evidence for everyone, everywhere.<br>
+    <details>
+      <summary style="outline:none">See More</summary>
+      <ul>
+        <div>
+          <div style="text-align:center">
+            <img width="99%device-width" src="imgs/Agent/Medical-Agent.jpg" alt="Medical AI Agent Project">
+          </div>
+        </div>
+        <div>
+          <div style="text-align:center">
+            <img width="99%device-width" src="imgs/Agent/Tool-Description.jpg" alt="Tool Description">
+          </div>
+        </div>
+        We developed a unified, open-source LLM-based agentic system that integrates document retrieval, re-ranking, evidence grounding, and diagnosis generation to support dynamic, multi-step medical reasoning. Our system features a lightweight retrieval-augmented generation pipeline coupled with a cache-and-prune memory bank, enabling efficient long-context inference beyond standard LLM limits. The system autonomously invokes specialized tools, eliminating the need for manual prompt engineering or brittle multi-stage templates.
+      </ul>
+    </details>
+  </li>
+
+  <hr>
+  
+  <li>
+    <div style="float:left;">
+      <font color="#00066f">DocAgent: An Agentic Framework for Multi-modal Long-context Document Understanding</font>
+    </div>
+    <div style="float:right;">
+      <a href="https://aclanthology.org/2025.emnlp-main.893"><i class="fab fa fa-file-pdf-o"></i> Paper</a>
+    </div><br>
+    Li Sun, Liu He, <strong>Shuyue Jia</strong>, Yangfan He, Chenyu You
+    <br><em>The 2025 Conference on Empirical Methods in Natural Language Processing</em> (EMNLP 2025)
+    <details>
+      <summary style="outline:none">See More</summary>
+      <ul>
+        <div>
+          <div style="text-align:center">
+            <img width="99%device-width" src="imgs/Agent/DocAgent.jpg" alt="Document AI Agent Project">
+          </div>
+        </div>
+        We introduce DocAgent, a multi-agent framework for long-context document understanding that imitates the human reading practice. Specifically, we first extract a structured, tree-formatted outline from documents to help agents identify relevant sections efficiently. Further, we develop an interactive reading interface that enables agents to query and retrieve various types of content dynamically. To ensure answer reliability, we introduce a reviewer agent that cross-checks responses using complementary sources and maintains a task-agnostic memory bank to facilitate knowledge sharing across tasks. 
+      </ul>
+    </details>
+  </li>
+</ol>
   
 <hr>
 
@@ -917,7 +923,7 @@
 
 <hr>
 
-<h3 id="Brain-computer Interface"><font color="black">Topic 4 - </font><font color="#DE3163">Brain-computer Interface</font></h3>
+<h3 id="Deep Learning for Neural Systems and Brain Dynamics"><font color="black">Topic 4 - </font><font color="#DE3163">Deep Learning for Neural Systems and Brain Dynamics</font></h3>
 <ol>
   <li>
     <div style="float:left;">
@@ -1056,56 +1062,75 @@
 
 <h2 id="Academic Services">Academic Services</h2>
 <ol>
-  <li><strong>Journal Reviewer</strong> of<br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34" style="color:black;">IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE T-PAMI)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046" style="color:black;">IEEE Transactions on Multimedia (IEEE T-MM)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76" style="color:black;">IEEE Transactions on Circuits and Systems for Video Technology (IEEE T-CSVT)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" style="color:black;">IEEE Transactions on Neural Networks and Learning Systems (IEEE T-NNLS)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42" style="color:black;">IEEE Transactions on Medical Imaging (IEEE T-MI)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10" style="color:black;">IEEE Transactions on Biomedical Engineering (IEEE T-BME)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424" style="color:black;">IEEE Transactions on Industrial Informatics (IEEE T-II)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221037" style="color:black;">IEEE Transactions on Human-Machine Systems (IEEE T-HMS)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5165369" style="color:black;">IEEE Transactions on Affective Computing (IEEE T-AFFC)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274989" style="color:black;">IEEE Transactions on Cognitive and Developmental Systems (IEEE T-CDS)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7433297" style="color:black;">IEEE Transactions on Emerging Topics in Computational Intelligence (IEEE T-ETCI)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020" style="color:black;">IEEE Journal of Biomedical and Health Informatics (IEEE JBHI)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4200690" style="color:black;">IEEE Journal of Selected Topics in Signal Processing (IEEE J-STSP)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8782706" style="color:black;">IEEE Open Journal of the Industrial Electronics Society (IEEE OJIES)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8782664" style="color:black;">IEEE Open Journal of the Computer Society (IEEE OJCS)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=93" style="color:black;">IEEE MultiMedia (MM)</a><br>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7361" style="color:black;">IEEE Sensors Journal</a><br>
-    <a href="https://www.sciencedirect.com/journal/computer-vision-and-image-understanding" style="color:black;">Computer Vision and Image Understanding (CVIU)</a><br>
-    <a href="https://ietresearch.onlinelibrary.wiley.com/journal/17519667" style="color:black;">IET Image Processing</a><br>
-    <a href="https://ietresearch.onlinelibrary.wiley.com/journal/17518830" style="color:black;">IET Science, Measurement & Technology</a><br>
-    <a href="https://www.jmir.org" style="color:black;">Journal of Medical Internet Research (JMIR)</a>
+  <!-- <li><strong>Editorial Services</strong><br>
+    <ul>
+      <li>Part‑Time Editor, <a href="https://journal.bytran-pub.com/index.php/jmaidt" style="color:black;">Journal of Medical AI & Digital Therapeutics (JMAIDT)</a></li>
+      <li>Part‑Time Editor, <a href="https://journal.csrp-pub.com/index.php/LMEI" style="color:black;">Large Models and Embodied Intelligence (LMEI)</a></li>
+    </ul>
+  </li> -->
+  <li><strong>Journal Reviewer</strong><br>
+    <ul>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34" style="color:black;">IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE T-PAMI)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046" style="color:black;">IEEE Transactions on Multimedia (IEEE T-MM)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76" style="color:black;">IEEE Transactions on Circuits and Systems for Video Technology (IEEE T-CSVT)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" style="color:black;">IEEE Transactions on Neural Networks and Learning Systems (IEEE T-NNLS)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42" style="color:black;">IEEE Transactions on Medical Imaging (IEEE T-MI)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10" style="color:black;">IEEE Transactions on Biomedical Engineering (IEEE T-BME)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424" style="color:black;">IEEE Transactions on Industrial Informatics (IEEE T-II)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221037" style="color:black;">IEEE Transactions on Human-Machine Systems (IEEE T-HMS)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5165369" style="color:black;">IEEE Transactions on Affective Computing (IEEE T-AFFC)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274989" style="color:black;">IEEE Transactions on Cognitive and Developmental Systems (IEEE T-CDS)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7433297" style="color:black;">IEEE Transactions on Emerging Topics in Computational Intelligence (IEEE T-ETCI)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020" style="color:black;">IEEE Journal of Biomedical and Health Informatics (IEEE JBHI)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4200690" style="color:black;">IEEE Journal of Selected Topics in Signal Processing (IEEE J-STSP)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8782706" style="color:black;">IEEE Open Journal of the Industrial Electronics Society (IEEE OJIES)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8782664" style="color:black;">IEEE Open Journal of the Computer Society (IEEE OJCS)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=93" style="color:black;">IEEE MultiMedia (MM)</a><br></li>
+      <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7361" style="color:black;">IEEE Sensors Journal</a><br></li>
+      <li><a href="https://www.sciencedirect.com/journal/computer-vision-and-image-understanding" style="color:black;">Computer Vision and Image Understanding (CVIU)</a><br></li>
+      <li><a href="https://ietresearch.onlinelibrary.wiley.com/journal/17519667" style="color:black;">IET Image Processing</a><br></li>
+      <li><a href="https://ietresearch.onlinelibrary.wiley.com/journal/17518830" style="color:black;">IET Science, Measurement & Technology</a><br></li>
+      <li><a href="https://www.jmir.org" style="color:black;">Journal of Medical Internet Research (JMIR)</a></li>
+    </ul>
   </li>
-  <li><strong>Conference Reviewer</strong> of<br>
-    <a href="https://neurips.cc" style="color:black;">Advances in Neural Information Processing Systems (NeurIPS) 2026</a><br>
-    <a href="https://iclr.cc" style="color:black;">International Conference on Learning Representations (ICLR) 2025, 2026</a><br>
-    <a href="https://2026.aclweb.org/calls/industry_track/" style="color:black;">Association for Computational Linguistics (ACL) Industry Track 2026</a>
+  
+  <li><strong>Conference Reviewer</strong><br>
+    <ul>
+      <li><a href="https://neurips.cc" style="color:black;">Advances in Neural Information Processing Systems (NeurIPS) 2026</a><br></li>
+      <li><a href="https://iclr.cc" style="color:black;">International Conference on Learning Representations (ICLR) 2025, 2026</a><br></li>
+      <li><a href="https://2026.aclweb.org/calls/industry_track/" style="color:black;">Association for Computational Linguistics (ACL) Industry Track 2026</a></li>
+    </ul>
   </li>
-  <li><strong>Committee Member</strong> of<br>
+  <li><strong>Technical Activity</strong><br>
+    <ul>
+      <li><a href="https://ieeeboston.org" style="color:black;">Area Chair, IEEE Boston Section Circuits and Systems Society</a></li>
+      <li><a href="https://www.ieeesmc.org/2026-new-technical-committee-and-subcommittee-members/" style="color:black;">Technical Committee, Embodied AI Systems, IEEE Systems, Man, and Cybernetics Society</a></li>
+    </ul>
+  </li>
+  <li><strong>Services in International Conferences</strong><br>
     <ul>
       <li><a href="https://ieeeboston.org" style="color:black;">Local Conference Committee, IEEE Boston Section</a></li>
-      <li><a href="https://www.ieeesmc.org/2026-new-technical-committee-and-subcommittee-members/" style="color:black;">Technical Committee, Embodied AI Systems, IEEE Systems, Man, and Cybernetics (SMC) Society</a></li>
       <li><a href="https://2026.aclweb.org/calls/industry_track/" style="color:black;">Program Committee, The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026) Industry Track</a></li>
-      <li><a href="https://ieee-icad.org/icad-committee/" style="color:black;">Speaker Program Chair and Steering Committee, 2026 IEEE International Conference on AI and Data Analytics (ICAD)</a></li>
-      <li><a href="https://urtc.mit.edu" style="color:black;">Track Chair, 2025 IEEE MIT Undergraduate Research Technology Conference (MIT URTC)</a></li>
-      <li><a href="https://ieee-icad.org/icad-committee/" style="color:black;">Speaker Program Chair and Steering Committee, 2025 IEEE International Conference on AI and Data Analytics (ICAD)</a></li>
+      <li><a href="https://ieee-icad.org/icad-committee/" style="color:black;">Speaker Program Chair and Steering Committee, 2026 IEEE International Conference on AI and Data Analytics (ICAD 2026)</a></li>
+      <li><a href="https://ieee-icad.org/icad-committee/" style="color:black;">Speaker Program Chair and Steering Committee, 2025 IEEE International Conference on AI and Data Analytics (ICAD 2025)</a></li>
       <li><a href="https://amia.org/education-events/amia-2025-clinical-informatics-conference/spc" style="color:black;">Scientific Program Committee, 2025 AMIA Clinical Informatics Conference</a></li>
     </ul>
   </li>
-  <li><strong>Member</strong> of <a href="./awards/SigmaXi_2025.pdf" style="color:black;">Sigma Xi</a>, <a href="https://www.ieee.org" style="color:black;">IEEE</a>, <a href="https://www.acm.org" style="color:black;">ACM</a>, <a href="https://www.aclweb.org/portal/what-is-cl" style="color:black;">ACL</a>, and <a href="https://aaai.org" style="color:black;">AAAI</a></li>
-  <li><strong>Active Volunteer</strong> of<br>
+  <li><strong>Special Session Organizer</strong><br>
+    <ul>
+      <li><a href="https://urtc.mit.edu" style="color:black;">Track Chair, 2025 IEEE MIT Undergraduate Research Technology Conference (URTC 2025)</a></li>
+    </ul>
+  </li>
+  <li><strong>Volunteering and Community Services</strong><br>
     <ul>
       <li><a href="https://ieeeboston.org" style="color:black;">IEEE Boston Section</a></li>
-      <li><a href="https://www.datadrivenpharma.com/" style="color:black;">DataDrivenPharma Conference</a></li>
+      <li><a href="https://www.datadrivenpharma.com/" style="color:black;">DataDrivenPharma</a></li>
       <li><a href="https://www.roboticsinvest.tech" style="color:black;">Robotics Invest</a></li>
     </ul>
   </li>
 </ol>
 
-<h2 id="Selected Awards">Selected Awards</h2>
+<h2 id="Honors and Awards">Honors and Awards</h2>
 <ol>
   <li>
     <div style="float:left;">
