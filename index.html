@@ -150,7 +150,7 @@
   <br>
   
   𝗥𝗲𝘀𝗲𝗮𝗿𝗰𝗵 𝗜𝗻𝘁𝗲𝗿𝗲𝘀𝘁𝘀:<br>
-  My Ph.D. research focuses on <b>developing scalable and trustworthy autonomous AI systems</b> grounded in real-world evidence that deliver safe, reliable, extensible, and cost-efficient intelligence within real-world workflows. Specifically, I study: <b>AI Grounding in Real-world Evidence</b> [<a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2">Retrieval Grounding</a>, <a href="https://www.sciencedirect.com/science/article/pii/S1386505626000791">Attributional Grounding</a>, <a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106">Modality/Sequence Grounding</a>, <a href="">Temporal Grounding</a>, <a href="">Physical/Spatial Grounding</a>], <b>Specialized Intelligence</b> [<a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106v1">Video Instruction Tuning</a>], and <b>Personalized Intelligence</b>. My long-term goal is to advance <b>Artificial General Intelligence (AGI) for Medicine</b> by building safe, reliable, extensible, and cost-efficient foundations. You can read more about my interests in my <a href="./files/Statement/Research_Statement.pdf">Research Statement</a>.
+  My Ph.D. research focuses on <b>developing scalable and trustworthy autonomous AI systems</b> grounded in real-world evidence that deliver safe, reliable, extensible, and cost-efficient intelligence within real-world workflows. Specifically, I study: <b>AI Grounding in Real-world Evidence</b> [<a href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v2">Retrieval Grounding</a>, <a href="https://www.sciencedirect.com/science/article/pii/S1386505626000791">Attributional Grounding</a>, <a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106">Modality/Sequence Grounding</a>, <a href="">Temporal Grounding</a>, <a href="">Physical/Spatial Grounding</a>], <b>Specialized Intelligence</b> [<a href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106">Video Instruction Tuning</a>], and <b>Personalized Intelligence</b> [<a href="https://www.medrxiv.org/content/10.64898/2026.07.18.26358397">Model Merging</a>]. My long-term goal is to advance <b>Artificial General Intelligence (AGI) for Medicine</b> by building safe, reliable, extensible, and cost-efficient foundations. You can read more about my interests in my <a href="./files/Statement/Research_Statement.pdf">Research Statement</a>.
 
   <details>
   <summary style="outline:none">Research Focus Illustration</summary>
@@ -722,6 +722,30 @@
           </div>
         </div>
         This work introduces an innovative methodology for producing high-quality 3D lung CT images guided by textual information. Specifically, we introduce a hierarchical scheme that uses a modified UNet architecture. We start by synthesizing low-resolution images conditioned on the text, serving as a foundation for subsequent generators for complete volumetric data. To ensure the anatomical plausibility of the generated samples, we provide further guidance by generating vascular, airway, and lobular segmentation masks in conjunction with the CT images.
+      </ul>
+    </details>
+  </li>
+
+  <hr>
+
+  <li>
+    <div style="float:left;">
+      <font color="#00066f">Gradient-guided Adapter Merging for Neuroimaging Vision-language Models</font>
+    </div>
+    <div style="float:right;">
+      <a href="https://www.medrxiv.org/content/10.64898/2026.07.18.26358397"><i class="fab fa fa-file-pdf-o"></i> Paper</a>
+    </div><br>
+    Subhrangshu Bit, Osman B Guney, <strong>Shuyue Jia</strong>,  View ORCID ProfileVijaya B Kolachalama
+    <br><em>Technical Report</em><br>
+    <details>
+      <summary style="outline:none">See More</summary>
+      <ul>
+        <div>
+          <div style="text-align:center">
+            <img width="99%device-width" src="imgs/VLM/Model-Merging.jpg" alt="Personal Intelligence Project">
+          </div>
+        </div>
+        Here, we present GRadient-guided Adapter Merging (GRAM), a layer-selective low-rank adaptation (LoRA)-based fine-tuning and merging framework for multi-task neuroimaging visual question-answering (VQA). GRAM uses a gradient ratio that contrasts class-specific gradients to identify task-discriminative layers, and applies subspace-constrained projected gradient descent to restrict LoRA updates to directions consistent with the geometry of the pre-trained model. Experiments on the VQA benchmark showed that GRAM outperformed or matched all-layer LoRA fine-tuning and a standard merging baseline while reducing inter-task interference during merging, and approached or surpassed the performance of joint multi-task training without joint re-training.
       </ul>
     </details>
   </li>
