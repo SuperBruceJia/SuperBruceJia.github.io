@@ -34,8 +34,8 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: var(--font-body);
-  font-size: clamp(17px, 0.35vw + 16px, 19px);
-  line-height: 1.55;
+  font-size: clamp(19px, 0.55vw + 17px, 22px);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -357,14 +357,14 @@ body.menu-open .site-menu {
 .pillar-banner h2 {
   margin: 0 0 10px;
   font-family: var(--font-brand);
-  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  font-size: clamp(1.7rem, 2.8vw, 2.35rem);
   letter-spacing: -0.03em;
 }
 
 .pillar-banner p {
   margin: 0;
-  max-width: 70ch;
-  font-size: 0.98rem;
+  max-width: 62ch;
+  font-size: clamp(1.05rem, 0.45vw + 0.95rem, 1.28rem);
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.92);
 }
@@ -385,11 +385,11 @@ body.menu-open .site-menu {
 .block-label {
   display: inline-block;
   margin-bottom: 18px;
-  padding: 6px 10px;
+  padding: 7px 12px;
   border: 1px solid rgba(255, 255, 255, 0.85);
   background: #fff;
   color: #111;
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: 0.01em;
 }
@@ -607,7 +607,7 @@ body.menu-open .site-menu {
   align-items: start;
   padding-bottom: 14px;
   border-bottom: 1px solid var(--line);
-  font-size: 0.98rem;
+  font-size: 1.05rem;
 }
 
 .award-list li {
@@ -616,7 +616,7 @@ body.menu-open .site-menu {
   gap: 16px;
   padding-bottom: 14px;
   border-bottom: 1px solid var(--line);
-  font-size: 0.98rem;
+  font-size: 1.05rem;
 }
 
 .news-list time,
@@ -659,7 +659,7 @@ body.menu-open .site-menu {
 
 .section-lead {
   margin: 0 0 16px;
-  font-size: 0.98rem;
+  font-size: 1.05rem;
 }
 
 .service-list--follow {
@@ -787,9 +787,15 @@ body.menu-open .site-menu {
 
 .split-two {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 28px;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(28px, 3vw, 40px);
   align-items: start;
+}
+
+.split-two > div > p {
+  font-size: clamp(1.05rem, 0.35vw + 0.95rem, 1.22rem);
+  line-height: 1.65;
+  max-width: 48ch;
 }
 
 .contact-row {
@@ -797,6 +803,7 @@ body.menu-open .site-menu {
   flex-wrap: wrap;
   gap: 14px 22px;
   margin-top: 22px;
+  font-size: 1.05rem;
 }
 
 .contact-row a {
@@ -828,7 +835,7 @@ body.menu-open .site-menu {
 .bio-aside p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .bio-aside p a {
