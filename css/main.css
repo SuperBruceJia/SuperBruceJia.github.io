@@ -882,16 +882,92 @@ body.menu-open .site-menu {
   font-size: 0.92rem;
 }
 
-.footnote-bar strong {
+.footnote-bar .quote {
+  margin: 10px 0 0;
   color: #fff;
-  font-family: var(--font-brand);
   font-size: 1.05rem;
 }
 
-.footnote-bar .quote {
-  margin: 10px 0 18px;
+.footnote-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 48px;
+}
+
+.footnote-brand,
+.footnote-meta {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footnote-brand {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.footnote-meta {
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: min(100%, 340px);
+  min-height: 100%;
+}
+
+.footnote-meta > div:last-child {
+  margin-top: auto;
+}
+
+.footnote-brand strong,
+.footnote-meta h4 {
+  display: block;
+  margin: 0;
+  padding: 0;
   color: #fff;
+  font-family: var(--font-brand);
   font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.footnote-brand p {
+  margin: 8px 0 0;
+}
+
+.footnote-brand .quote {
+  margin: 10px 0 0;
+}
+
+.footnote-meta h4 {
+  margin: 0 0 10px;
+}
+
+.footnote-meta p {
+  margin: 0 0 6px;
+}
+
+.footnote-meta a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.footnote-back {
+  margin-top: 18px;
+}
+
+@media (max-width: 900px) {
+  .footnote-grid {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .footnote-meta {
+    width: 100%;
+  }
 }
 
 /* Animations */
