@@ -578,6 +578,14 @@ body.menu-open .site-menu {
   transform-origin: center;
 }
 
+.logo-tile--photo {
+  padding: 0;
+}
+
+.logo-tile--photo img {
+  object-fit: cover;
+}
+
 .logo-tile--text {
   background: #fff;
   color: #111;
