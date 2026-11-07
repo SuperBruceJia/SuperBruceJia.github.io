@@ -446,7 +446,8 @@ body.menu-open .site-menu {
 .card-media--full {
   aspect-ratio: 3 / 2;
   border: none;
-  background: transparent;
+  background: #111;
+  overflow: hidden;
 }
 
 .card-media--full img {
@@ -471,19 +472,23 @@ body.menu-open .site-menu {
   grid-auto-columns: unset;
   overflow: visible;
   scroll-snap-type: none;
-  align-items: start;
-  max-width: 1100px;
+  align-items: stretch;
+  gap: 24px;
+  max-width: none;
+  width: 100%;
 }
 
 .rail--team .card-item {
   min-width: 0;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .rail--team .card-copy {
   display: grid;
   gap: 4px;
-  min-height: 4.2em;
+  margin-top: auto;
 }
 
 @media (max-width: 700px) {
@@ -646,6 +651,15 @@ body.menu-open .site-menu {
 .plain-list strong {
   display: block;
   margin-bottom: 2px;
+}
+
+.section-lead {
+  margin: 0 0 16px;
+  font-size: 0.98rem;
+}
+
+.service-list--follow {
+  margin-top: 22px;
 }
 
 .open-source-list li {
