@@ -596,6 +596,14 @@ body.menu-open .site-menu {
   padding: 8px 10px;
 }
 
+.logo-tile--cityu {
+  padding: 10px 20px 26px;
+}
+
+.logo-tile--cityu img {
+  object-position: center 40%;
+}
+
 .logo-tile--neepu img {
   transform: scale(1.18);
   transform-origin: center;
