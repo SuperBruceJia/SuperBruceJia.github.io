@@ -325,6 +325,10 @@ body.menu-open .site-menu {
 }
 
 /* ---------- Sections ---------- */
+.page-photography main {
+  padding-top: var(--header-h);
+}
+
 .pillar {
   border-top: 1px solid var(--line);
   padding-bottom: 56px;
@@ -660,6 +664,10 @@ body.menu-open .site-menu {
 
 .service-list--follow {
   margin-top: 22px;
+}
+
+.award-list--nodate li {
+  grid-template-columns: 1fr;
 }
 
 .open-source-list li {
