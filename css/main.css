@@ -668,6 +668,7 @@ body.menu-open .site-menu {
 
 .award-list--nodate li {
   grid-template-columns: 1fr;
+  white-space: normal;
 }
 
 .open-source-list li {
@@ -943,6 +944,10 @@ body.menu-open .site-menu {
   .award-list li {
     grid-template-columns: 88px 1fr;
     gap: 12px;
+  }
+
+  .award-list--nodate li {
+    grid-template-columns: 1fr;
   }
 
   .pillar-banner {
