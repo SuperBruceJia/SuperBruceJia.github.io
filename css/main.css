@@ -34,7 +34,7 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: var(--font-body);
-  font-size: 17px;
+  font-size: clamp(17px, 0.35vw + 16px, 19px);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -94,7 +94,7 @@ button {
 .site-brand {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: clamp(36px, 4.2vw, 52px);
+  font-size: clamp(40px, 4.6vw, 60px);
   letter-spacing: -0.02em;
   text-decoration: none;
   line-height: 1.05;
@@ -201,7 +201,7 @@ body.menu-open .site-menu {
 /* ---------- Hero ---------- */
 .hero {
   min-height: 100vh;
-  padding: calc(var(--header-h) + 28px) clamp(18px, 3vw, 40px) 48px clamp(22px, 5vw, 72px);
+  padding: calc(var(--header-h) + 32px) clamp(20px, 3.5vw, 48px) 56px clamp(24px, 4.5vw, 64px);
   display: flex;
   align-items: center;
   position: relative;
@@ -218,20 +218,20 @@ body.menu-open .site-menu {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  gap: clamp(24px, 4vw, 48px);
+  gap: clamp(28px, 4vw, 56px);
 }
 
 .hero-copy {
-  flex: 1 1 38%;
-  max-width: 520px;
+  flex: 1 1 42%;
+  max-width: 680px;
   padding: 0;
   margin: 0;
   animation: rise 0.9s var(--ease) both;
 }
 
 .hero-kicker {
-  margin: 0 0 18px;
-  font-size: 0.78rem;
+  margin: 0 0 20px;
+  font-size: clamp(0.78rem, 0.2vw + 0.72rem, 0.9rem);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--muted);
@@ -240,10 +240,10 @@ body.menu-open .site-menu {
 .hero-bio {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 35px;
-  line-height: 40px;
+  font-size: clamp(28px, 1.6vw + 22px, 46px);
+  line-height: 1.22;
   font-weight: 400;
-  max-width: 18em;
+  max-width: none;
 }
 
 .hero-bio .mark {
@@ -251,7 +251,7 @@ body.menu-open .site-menu {
 }
 
 .hero-visual {
-  flex: 1 1 58%;
+  flex: 1 1 56%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -263,7 +263,7 @@ body.menu-open .site-menu {
 .hero-visual figure {
   margin: 0;
   width: 100%;
-  max-width: 820px;
+  max-width: min(1080px, 100%);
   position: relative;
 }
 
@@ -933,8 +933,8 @@ body.menu-open .site-menu {
   }
 
   .hero-bio {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: clamp(24px, 5.5vw, 30px);
+    line-height: 1.28;
   }
 
   .panel-strip {
