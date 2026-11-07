@@ -712,6 +712,58 @@ body.menu-open .site-menu {
   letter-spacing: -0.01em;
 }
 
+/* Featured rail: default cards stay ~300px; selected figures a bit wider */
+.rail--featured {
+  grid-auto-columns: max-content;
+}
+
+.rail--featured .card-item {
+  width: 300px;
+}
+
+.rail--featured .card-item--figure {
+  width: 350px;
+}
+
+.rail--featured .card-item--figure .card-media {
+  aspect-ratio: auto;
+  height: 225px;
+  background: #fff;
+}
+
+.rail--featured .card-item--figure .card-media img {
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Wide figure cards for research topics: same media height, modestly wider */
+.rail--wide {
+  grid-auto-columns: minmax(320px, 360px);
+}
+
+.rail--wide .card-media {
+  aspect-ratio: auto;
+  height: 225px; /* matches prior 300px × 4/3 card height */
+  background: #fff;
+}
+
+.rail--wide .card-media img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.card-media--top img,
+.rail--wide .card-media--top img {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.card-media--left img,
+.rail--wide .card-media--left img {
+  object-fit: cover;
+  object-position: left center;
+}
+
 .section-lead {
   margin: 0 0 16px;
   font-size: 1.05rem;
@@ -1140,6 +1192,14 @@ body.menu-open .site-menu {
 
   .rail {
     grid-auto-columns: minmax(220px, 78vw);
+  }
+
+  .rail--wide {
+    grid-auto-columns: minmax(280px, 85vw);
+  }
+
+  .rail--wide .card-media {
+    height: 225px;
   }
 }
 
