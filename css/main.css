@@ -16,6 +16,7 @@
   --font-brand: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --page-pad-end: clamp(20px, 3.5vw, 48px);
 }
 
 *,
@@ -201,7 +202,7 @@ body.menu-open .site-menu {
 /* ---------- Hero ---------- */
 .hero {
   min-height: 100vh;
-  padding: calc(var(--header-h) + 32px) clamp(20px, 3.5vw, 48px) 56px clamp(24px, 4.5vw, 64px);
+  padding: calc(var(--header-h) + 32px) var(--page-pad-end) 56px clamp(24px, 4.5vw, 64px);
   display: flex;
   align-items: center;
   position: relative;
@@ -842,7 +843,7 @@ body.menu-open .site-menu {
 
 .split-two {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
   gap: clamp(28px, 3vw, 40px);
   align-items: start;
 }
@@ -867,9 +868,16 @@ body.menu-open .site-menu {
   font-weight: 600;
 }
 
+#about .block {
+  padding-right: var(--page-pad-end);
+}
+
 .bio-aside {
   padding: 0;
   width: 100%;
+  max-width: min(1080px, 100%);
+  justify-self: end;
+  margin-right: 0;
 }
 
 .bio-aside a {
@@ -884,7 +892,7 @@ body.menu-open .site-menu {
   height: auto;
   margin-bottom: 12px;
   display: block;
-  border-radius: 18px;
+  border-radius: 24px;
 }
 
 .bio-aside p {
@@ -1048,10 +1056,14 @@ body.menu-open .site-menu {
 
 /* Responsive */
 @media (max-width: 900px) {
+  :root {
+    --page-pad-end: 18px;
+  }
+
   .hero {
     align-items: stretch;
     min-height: auto;
-    padding: calc(var(--header-h) + 20px) 18px 36px;
+    padding: calc(var(--header-h) + 20px) var(--page-pad-end) 36px;
   }
 
   .hero-row {
