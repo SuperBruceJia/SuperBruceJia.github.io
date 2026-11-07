@@ -799,6 +799,7 @@ body.menu-open .site-menu {
   height: auto;
   margin-bottom: 12px;
   display: block;
+  border-radius: 18px;
 }
 
 .bio-aside p {
