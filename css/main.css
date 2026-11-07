@@ -438,12 +438,14 @@ body.menu-open .site-menu {
   overflow: hidden;
   background: #161616;
   border: 1px solid var(--line);
+  border-radius: 18px;
 }
 
 .card-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 18px;
   transition: transform 0.7s var(--ease);
 }
 
@@ -496,7 +498,8 @@ body.menu-open .site-menu {
 }
 
 @media (max-width: 700px) {
-  .rail--team {
+  .rail--team,
+  .rail--products {
     grid-template-columns: 1fr;
   }
 }
@@ -514,6 +517,34 @@ body.menu-open .site-menu {
   color: var(--muted);
   font-size: 0.88rem;
   line-height: 1.45;
+}
+
+.rail--products {
+  grid-auto-flow: unset;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-columns: unset;
+  overflow: visible;
+  scroll-snap-type: none;
+  gap: 24px;
+  max-width: none;
+  width: 100%;
+}
+
+.card-media--site {
+  aspect-ratio: 16 / 9;
+  border: none;
+  background: transparent;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.card-media--site img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  border-radius: 18px;
 }
 
 .rail--affiliations {
@@ -882,10 +913,29 @@ body.menu-open .site-menu {
   font-size: 0.92rem;
 }
 
-.footnote-bar .quote {
-  margin: 10px 0 0;
+.footnote-list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.footnote-list li {
+  position: relative;
+  padding-left: 1em;
   color: #fff;
   font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.footnote-list li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
 }
 
 .footnote-grid {
@@ -907,17 +957,22 @@ body.menu-open .site-menu {
 .footnote-brand {
   flex: 1 1 auto;
   min-width: 0;
+  align-self: stretch;
 }
 
 .footnote-meta {
   flex: 0 0 auto;
   justify-content: space-between;
   width: min(100%, 340px);
-  min-height: 100%;
+  align-self: stretch;
 }
 
 .footnote-meta > div:last-child {
   margin-top: auto;
+}
+
+.footnote-meta > div:last-child p:last-child {
+  margin-bottom: 0;
 }
 
 .footnote-brand strong,
@@ -931,14 +986,6 @@ body.menu-open .site-menu {
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.01em;
-}
-
-.footnote-brand p {
-  margin: 8px 0 0;
-}
-
-.footnote-brand .quote {
-  margin: 10px 0 0;
 }
 
 .footnote-meta h4 {
