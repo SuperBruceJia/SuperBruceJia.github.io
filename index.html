@@ -10,7 +10,7 @@
   <meta name="google-site-verification" content="UZ7grdeibwJYn35EsW-Yp0Ky7_vuMG45bHI1kki15H0"/>
   <meta name="baidu-site-verification" content="WJpwHTPWUq"/>
   <link rel="shortcut icon" href="bu.ico">
-  <link rel="stylesheet" href="css/main.css?v=47">
+  <link rel="stylesheet" href="css/main.css?v=49">
 </head>
 <body>
   <a class="sr-only" href="#main">Skip to content</a>
@@ -211,24 +211,95 @@
 
       <div class="block reveal">
         <span class="block-label">(2.2) Research topics</span>
-        <ul class="plain-list">
-          <li>
-            <strong>Topic 1 — Trustworthy multimodal foundation models</strong>
-            ReMIND, MedSyn, GRAM model merging, PodGPT / MedPodGPT, medical LLM evaluation.
-          </li>
-          <li>
-            <strong>Topic 2 — Grounded autonomous AI systems</strong>
-            Medical Agentic RAG, DocAgent multi-agent document intelligence.
-          </li>
-          <li>
-            <strong>Topic 3 — Computer vision</strong>
-            No-reference IQA via non-local modeling; monotonic IQA across mixed datasets.
-          </li>
-          <li>
-            <strong>Topic 4 — EEG-based BCI</strong>
-            GCNs-Net, Attention BiLSTM-GCN, ESI-CNN motor imagery decoding.
-          </li>
-        </ul>
+
+        <div class="topic-group">
+          <h3 class="topic-heading">Topic 1 — Trustworthy multimodal foundation models</h3>
+          <div class="rail" tabindex="0" aria-label="Topic 1 papers">
+            <a class="card-item" href="https://www.medrxiv.org/content/10.64898/2026.03.30.26349106v1">
+              <div class="card-media"><img src="imgs/VLM/VLM-Brain-MRIs-Figure-1.jpg" alt=""></div>
+              <h3 class="card-title">ReMIND: Vision-language framework for multi-sequence brain MRI</h3>
+              <p class="card-meta">Technical Report · 2026</p>
+            </a>
+            <a class="card-item" href="https://www.medrxiv.org/content/10.64898/2026.07.18.26358397v1">
+              <div class="card-media"><img src="imgs/VLM/Model-Merging.jpg" alt=""></div>
+              <h3 class="card-title">GRAM: Gradient-guided adapter merging for neuroimaging VQA</h3>
+              <p class="card-meta">Technical Report · 2026</p>
+            </a>
+            <a class="card-item" href="https://www.nature.com/articles/s44385-025-00022-0">
+              <div class="card-media"><img src="imgs/PodGPT/PodGPT.png" alt=""></div>
+              <h3 class="card-title">PodGPT: Audio-augmented LLM for research and education</h3>
+              <p class="card-meta">Nature npj Biomedical Innovations · 2025</p>
+            </a>
+            <a class="card-item" href="https://www.medrxiv.org/content/10.1101/2024.07.11.24310304v1">
+              <div class="card-media"><img src="imgs/PodGPT/MedPodGPT.png" alt=""></div>
+              <h3 class="card-title">MedPodGPT: Multilingual audio-augmented medical LLM</h3>
+              <p class="card-meta">medRxiv · 2024</p>
+            </a>
+            <a class="card-item" href="https://ieeexplore.ieee.org/document/10566053">
+              <div class="card-media"><img src="imgs/Research/MedSyn.jpg" alt=""></div>
+              <h3 class="card-title">MedSyn: Text-guided anatomy-aware 3D CT synthesis</h3>
+              <p class="card-meta">IEEE T-MI · 2024</p>
+            </a>
+            <a class="card-item" href="https://www.medrxiv.org/content/10.64898/2026.04.16.26348910v1">
+              <div class="card-media"><img src="imgs/PodGPT/Validation.png" alt=""></div>
+              <h3 class="card-title">Performance of open-source LLMs on NephSAP</h3>
+              <p class="card-meta">Technical Report · 2026</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="topic-group">
+          <h3 class="topic-heading">Topic 2 — Grounded autonomous AI systems</h3>
+          <div class="rail" tabindex="0" aria-label="Topic 2 papers">
+            <a class="card-item" href="https://www.sciencedirect.com/science/article/pii/S1386505626000791">
+              <div class="card-media"><img src="imgs/Agent/Medical-Agent.jpg" alt=""></div>
+              <h3 class="card-title">Agentic memory-augmented retrieval &amp; evidence grounding</h3>
+              <p class="card-meta">Int. Journal of Medical Informatics · 2026</p>
+            </a>
+            <a class="card-item" href="https://aclanthology.org/2025.emnlp-main.893">
+              <div class="card-media"><img src="imgs/Agent/DocAgent.jpg" alt=""></div>
+              <h3 class="card-title">DocAgent: Multi-agent long-context document understanding</h3>
+              <p class="card-meta">EMNLP · 2025</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="topic-group">
+          <h3 class="topic-heading">Topic 3 — Computer vision</h3>
+          <div class="rail" tabindex="0" aria-label="Topic 3 papers">
+            <a class="card-item" href="https://ieeexplore.ieee.org/abstract/document/9950035">
+              <div class="card-media"><img src="imgs/Research/Picture5.jpg" alt=""></div>
+              <h3 class="card-title">No-reference IQA via non-local dependency modeling</h3>
+              <p class="card-meta">IEEE MMSP · 2022</p>
+            </a>
+            <a class="card-item" href="https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/ell2.12698">
+              <div class="card-media"><img src="imgs/Research/MonotonicIQA.png" alt=""></div>
+              <h3 class="card-title">Learning from mixed datasets: Monotonic IQA</h3>
+              <p class="card-meta">Electronics Letters · 2022</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="topic-group">
+          <h3 class="topic-heading">Topic 4 — EEG-based BCI</h3>
+          <div class="rail" tabindex="0" aria-label="Topic 4 papers">
+            <a class="card-item" href="https://ieeexplore.ieee.org/document/9889159">
+              <div class="card-media"><img src="imgs/Research/Picture2.png" alt=""></div>
+              <h3 class="card-title">GCNs-Net: Graph CNNs for EEG motor imagery</h3>
+              <p class="card-meta">IEEE T-NNLS · 2022</p>
+            </a>
+            <a class="card-item" href="https://www.frontiersin.org/article/10.3389/fbioe.2021.706229">
+              <div class="card-media"><img src="imgs/Research/Picture3.jpeg" alt=""></div>
+              <h3 class="card-title">Attention-based BiLSTM-GCN for motor imagery</h3>
+              <p class="card-meta">Frontiers in Bioengineering and Biotechnology · 2021</p>
+            </a>
+            <a class="card-item" href="https://iopscience.iop.org/article/10.1088/1741-2552/ab4af6/meta">
+              <div class="card-media"><img src="imgs/Research/Picture1-1.png" alt=""></div>
+              <h3 class="card-title">EEG four-class motor imagery via scout ESI and CNN</h3>
+              <p class="card-meta">Journal of Neural Engineering · 2020</p>
+            </a>
+          </div>
+        </div>
       </div>
 
       <div class="block reveal">

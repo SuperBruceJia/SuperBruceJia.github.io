@@ -657,6 +657,21 @@ body.menu-open .site-menu {
   margin-bottom: 2px;
 }
 
+.topic-group {
+  margin-bottom: 28px;
+}
+
+.topic-group:last-child {
+  margin-bottom: 8px;
+}
+
+.topic-heading {
+  margin: 0 0 14px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
 .section-lead {
   margin: 0 0 16px;
   font-size: 1.05rem;
