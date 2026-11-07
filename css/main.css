@@ -676,6 +676,7 @@ body.menu-open .site-menu {
   display: grid;
   gap: 18px;
   max-width: none;
+  margin-bottom: 28px;
 }
 
 .photo-logo-card {
