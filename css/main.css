@@ -858,8 +858,12 @@ body.menu-open .site-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 14px 22px;
-  margin-top: 22px;
+  margin-top: 14px;
   font-size: 1.05rem;
+}
+
+.contact-row:first-of-type {
+  margin-top: 22px;
 }
 
 .contact-row a {
