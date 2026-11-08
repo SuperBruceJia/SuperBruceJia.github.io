@@ -1202,6 +1202,24 @@ body.menu-open .site-menu {
     grid-auto-columns: minmax(220px, 78vw);
   }
 
+  /* Featured cards use fixed widths on desktop; on mobile those
+     overflow the rail columns and stack text/images on top of each other. */
+  .rail--featured {
+    grid-auto-columns: minmax(260px, 82vw);
+  }
+
+  .rail--featured .card-item,
+  .rail--featured .card-item--figure {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .rail--featured .card-item--figure .card-media {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
   .rail--wide {
     grid-auto-columns: minmax(280px, 85vw);
   }
