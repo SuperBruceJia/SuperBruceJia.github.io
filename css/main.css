@@ -553,6 +553,38 @@ body.menu-open .site-menu {
   border-radius: 18px;
 }
 
+.rail--media {
+  grid-auto-flow: column;
+  grid-template-rows: auto;
+  grid-auto-columns: 240px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.rail--media .card-item {
+  width: 240px;
+  min-width: 240px;
+}
+
+.card-media--logo {
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.card-media--logo img {
+  width: 96%;
+  height: 92%;
+  object-fit: contain;
+  object-position: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .rail--affiliations {
   grid-auto-columns: minmax(260px, 320px);
   gap: 22px;
@@ -812,6 +844,41 @@ body.menu-open .site-menu {
   width: 48px;
   height: 48px;
   background-image: url("../imgs/brands/docker.svg");
+}
+
+.card-media--press {
+  background:
+    radial-gradient(800px 220px at 80% 10%, rgba(196, 122, 58, 0.28), transparent 55%),
+    linear-gradient(160deg, #1c1712 0%, #12100e 55%, #1a1613 100%);
+}
+
+.card-media--press::before {
+  display: none;
+}
+
+.press-logo {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.press-logo--wide {
+  width: auto;
+  max-width: calc(100% - 32px);
+  height: 44px;
+  padding: 6px 8px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.press-logo--onlight {
+  background: #fff;
+  padding: 4px;
 }
 
 .os-brand {
