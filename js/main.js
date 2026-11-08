@@ -59,4 +59,30 @@
   } else {
     reveals.forEach((el) => el.classList.add("is-visible"));
   }
+
+  const formatCount = (n) => {
+    if (n >= 1000) {
+      const value = n / 1000;
+      return `${value >= 10 ? Math.round(value) : value.toFixed(1).replace(/\.0$/, "")}k`;
+    }
+    return String(n);
+  };
+
+  const githubStats = document.querySelectorAll(".os-stats[data-github]");
+  githubStats.forEach((el) => {
+    const repo = el.getAttribute("data-github");
+    if (!repo) return;
+    fetch(`https://api.github.com/repos/${repo}`)
+      .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+      .then((data) => {
+        const stars = el.querySelector("[data-stars]");
+        const forks = el.querySelector("[data-forks]");
+        if (stars) stars.textContent = formatCount(data.stargazers_count ?? 0);
+        if (forks) forks.textContent = formatCount(data.forks_count ?? 0);
+        el.hidden = false;
+      })
+      .catch(() => {
+        el.hidden = true;
+      });
+  });
 })();

@@ -10,8 +10,9 @@
   --c1: #5f7d81;
   --c2: #7d8458;
   --c3: #c47a3a;
-  --c4: #c45a7a;
-  --c5: #7a5ac4;
+  --c4: #3d8f7a;
+  --c5: #c45a7a;
+  --c6: #7a5ac4;
 
   --font-brand: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -321,6 +322,7 @@ body.menu-open .site-menu {
 .marker[data-target="3"] { background: var(--c3); }
 .marker[data-target="4"] { background: var(--c4); }
 .marker[data-target="5"] { background: var(--c5); }
+.marker[data-target="6"] { background: var(--c6); }
 
 .link-inline {
   text-decoration: underline;
@@ -356,6 +358,7 @@ body.menu-open .site-menu {
 .pillar[data-pillar="3"] .pillar-banner { background: var(--c3); }
 .pillar[data-pillar="4"] .pillar-banner { background: var(--c4); }
 .pillar[data-pillar="5"] .pillar-banner { background: var(--c5); }
+.pillar[data-pillar="6"] .pillar-banner { background: var(--c6); }
 
 .pillar-banner h2 {
   margin: 0 0 10px;
@@ -749,6 +752,109 @@ body.menu-open .site-menu {
 .rail--featured .card-item--figure .card-media img {
   object-fit: contain;
   object-position: center;
+}
+
+.card-media--os {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 18px 18px 16px;
+  aspect-ratio: auto;
+  height: 225px;
+  border: 1px solid var(--line);
+  color: #fff;
+}
+
+.card-media--os::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.95;
+}
+
+.card-media--github {
+  background:
+    radial-gradient(800px 220px at 12% 0%, rgba(61, 143, 122, 0.35), transparent 55%),
+    linear-gradient(160deg, #171a1f 0%, #0d1117 55%, #161b22 100%);
+}
+
+.card-media--github::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.607-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E");
+}
+
+.card-media--hf {
+  background:
+    radial-gradient(800px 220px at 88% 0%, rgba(255, 210, 80, 0.28), transparent 50%),
+    linear-gradient(160deg, #2a2118 0%, #1a1410 55%, #241c16 100%);
+}
+
+.card-media--hf::before {
+  width: 44px;
+  height: 44px;
+  background-image: url("../imgs/brands/huggingface.svg");
+}
+
+.card-media--docker {
+  background:
+    radial-gradient(800px 220px at 18% 0%, rgba(36, 150, 237, 0.35), transparent 55%),
+    linear-gradient(160deg, #0b1c2c 0%, #0a1622 55%, #102536 100%);
+}
+
+.card-media--docker::before {
+  width: 48px;
+  height: 48px;
+  background-image: url("../imgs/brands/docker.svg");
+}
+
+.os-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.os-name {
+  font-size: clamp(1.35rem, 1.2vw + 1.1rem, 1.7rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  word-break: break-word;
+}
+
+.os-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  margin: 4px 0 0;
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.os-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.os-stat svg {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.rail--featured .card-item--figure .card-media--os {
+  background-color: transparent;
 }
 
 /* Wide figure cards for research topics: same media height, modestly wider */

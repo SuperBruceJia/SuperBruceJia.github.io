@@ -10,7 +10,7 @@
   <meta name="google-site-verification" content="UZ7grdeibwJYn35EsW-Yp0Ky7_vuMG45bHI1kki15H0"/>
   <meta name="baidu-site-verification" content="WJpwHTPWUq"/>
   <link rel="shortcut icon" href="bu.ico">
-  <link rel="stylesheet" href="css/main.css?v=84">
+  <link rel="stylesheet" href="css/main.css?v=89">
 </head>
 <body>
   <a class="sr-only" href="#main">Skip to content</a>
@@ -28,8 +28,9 @@
       <a href="#updates"><span>1</span> Updates</a>
       <a href="#research"><span>2</span> Research</a>
       <a href="#systems"><span>3</span> Systems</a>
-      <a href="#beyond"><span>4</span> Beyond the lab</a>
-      <a href="./photography.html"><span>5</span> Photography</a>
+      <a href="#opensource"><span>4</span> Open source</a>
+      <a href="#beyond"><span>5</span> Beyond the lab</a>
+      <a href="./photography.html"><span>6</span> Photography</a>
     </nav>
     <div class="menu-meta">
       <p>
@@ -57,12 +58,15 @@
             into
             <a class="link-inline" href="#systems">deployed systems</a>
             <a class="marker" data-target="3" href="#systems" aria-label="Systems">3</a>
+            and
+            <a class="link-inline" href="#opensource">open source</a>
+            <a class="marker" data-target="4" href="#opensource" aria-label="Open source">4</a>
             — and continues
             <a class="link-inline" href="#beyond">beyond the lab</a>
-            <a class="marker" data-target="4" href="#beyond" aria-label="Beyond the lab">4</a>
+            <a class="marker" data-target="5" href="#beyond" aria-label="Beyond the lab">5</a>
             through teaching, service, athletics, and
             <a class="link-inline" href="./photography.html">photography</a>
-            <a class="marker" data-target="5" href="./photography.html" aria-label="Photography">5</a>.
+            <a class="marker" data-target="6" href="./photography.html" aria-label="Photography">6</a>.
           </p>
         </div>
         <div class="hero-visual">
@@ -351,9 +355,9 @@
       <div class="pillar-banner">
         <div>
           <h2>(3) Systems</h2>
-          <p>Innovation means a million people can use what you build. These products and open-source libraries move models into real workflows.</p>
+          <p>Innovation means a million people can use what you build. These products move models into real workflows.</p>
         </div>
-        <a class="know-more" href="https://github.com/SuperBruceJia">GitHub</a>
+        <a class="know-more" href="#opensource">Open source →</a>
       </div>
 
       <div class="block reveal">
@@ -371,65 +375,218 @@
           </a>
         </div>
       </div>
+    </section>
+
+    <!-- 4 Open source -->
+    <section class="pillar" id="opensource" data-pillar="4">
+      <div class="pillar-banner">
+        <div>
+          <h2>(4) Open source</h2>
+          <p>Code, models, and data released for transparency and reproducibility — whenever sharing is permitted.</p>
+        </div>
+        <a class="know-more" href="https://github.com/SuperBruceJia">GitHub</a>
+      </div>
 
       <div class="block reveal">
-        <span class="block-label">(3.2) Open source</span>
-        <ul class="plain-list open-source-list">
-          <li>
-            <span class="os-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 13v2a3 3 0 0 0 3 3h1v-7H7a3 3 0 0 0-3 3zm13-2h-1v7h1a3 3 0 0 0 3-3v-2a3 3 0 0 0-3-2z"/><path d="M7 12V10a5 5 0 0 1 10 0v2"/></svg>
-            </span>
-            <div>
-              <strong><a href="https://github.com/vkola-lab/PodGPT">PodGPT Library</a></strong>
-              Benchmarking multilingual medical LLMs; PodRAG retrieval pipeline.
+        <span class="block-label">(4.1) Code</span>
+        <p class="section-lead">
+          I prioritize research transparency and reproducibility, and provide links to the code and data associated with my previous research projects whenever possible. Exceptions include proprietary clinical data from hospitals such as BMC, LHMC, MGB, and BSH, as well as restricted-access datasets from NACC and NEJM. In these cases, I share data processing and analysis code whenever permitted, enabling researchers with authorized data access to reproduce and build upon our work.
+        </p>
+        <div class="rail rail--featured" tabindex="0" aria-label="Open-source repositories">
+          <a class="card-item card-item--figure" href="https://gitranks.com/profile/SuperBruceJia">
+            <div class="card-media card-media--os card-media--github">
+              <span class="os-brand">GitRanks</span>
+              <span class="os-name">SuperBruceJia</span>
             </div>
-          </li>
-          <li>
-            <span class="os-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h2l2-5 3 10 3-7 2 2h6"/><circle cx="18.5" cy="6.5" r="2.2"/></svg>
-            </span>
-            <div>
-              <strong><a href="https://github.com/SuperBruceJia/EEG-DL">EEG-DL</a></strong>
-              Deep learning library for EEG signal classification.
+            <h3 class="card-title">GitRanks profile</h3>
+            <p class="card-meta">Open-source ranking · SuperBruceJia</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://github.com/vkola-lab/PodGPT">
+            <div class="card-media card-media--os card-media--github">
+              <span class="os-brand">GitHub</span>
+              <span class="os-name">PodGPT</span>
+              <p class="os-stats" data-github="vkola-lab/PodGPT" hidden>
+                <span class="os-stat" title="Stars"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z"/></svg><span data-stars></span></span>
+                <span class="os-stat" title="Forks"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M5 5.372v.878c0 .192.168.1.4.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v6.128A2.251 2.251 0 0 1 8 18.25h-.5a2.25 2.25 0 1 1-1.5 0H8a.75.75 0 0 0 .75-.75V8.25H7.25A2.25 2.25 0 0 1 5 6v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 12.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg><span data-forks></span></span>
+              </p>
             </div>
-          </li>
-          <li>
-            <span class="os-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M13 5l-2 14"/></svg>
-            </span>
-            <div>
-              <strong><a href="https://github.com/SuperBruceJia/promptcraft">PromptCraft</a></strong>
-              Prompt perturbation toolkit for robustness analysis.
+            <h3 class="card-title">PodGPT</h3>
+            <p class="card-meta">vkola-lab · multilingual medical LLMs &amp; PodRAG</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://github.com/vkola-lab/ijmi2026">
+            <div class="card-media card-media--os card-media--github">
+              <span class="os-brand">GitHub</span>
+              <span class="os-name">ijmi2026</span>
+              <p class="os-stats" data-github="vkola-lab/ijmi2026" hidden>
+                <span class="os-stat" title="Stars"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z"/></svg><span data-stars></span></span>
+                <span class="os-stat" title="Forks"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M5 5.372v.878c0 .192.168.1.4.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v6.128A2.251 2.251 0 0 1 8 18.25h-.5a2.25 2.25 0 1 1-1.5 0H8a.75.75 0 0 0 .75-.75V8.25H7.25A2.25 2.25 0 0 1 5 6v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 12.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg><span data-forks></span></span>
+              </p>
             </div>
-          </li>
-          <li>
-            <span class="os-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.5 14.5 9H21l-5.2 3.8L17.9 20 12 15.8 6.1 20l2.1-7.2L3 9h6.5L12 2.5z"/></svg>
-            </span>
-            <div>
-              <strong>Curated surveys</strong>
-              <a href="https://github.com/SuperBruceJia/Awesome-Large-Vision-Language-Model">Awesome VLM</a>,
-              <a href="https://github.com/SuperBruceJia/Awesome-Mixture-of-Experts">Awesome MoE</a>,
-              <a href="https://github.com/SuperBruceJia/Awesome-LLM-Self-Consistency">Awesome Self-Consistency</a>,
-              <a href="https://github.com/SuperBruceJia/Awesome-Text-Generation-Evaluation">Awesome NLG Evaluation</a>.
+            <h3 class="card-title">Medical Agentic RAG</h3>
+            <p class="card-meta">vkola-lab · IJMI 2026 code</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://github.com/SuperBruceJia/EEG-DL">
+            <div class="card-media card-media--os card-media--github">
+              <span class="os-brand">GitHub</span>
+              <span class="os-name">EEG-DL</span>
+              <p class="os-stats" data-github="SuperBruceJia/EEG-DL" hidden>
+                <span class="os-stat" title="Stars"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z"/></svg><span data-stars></span></span>
+                <span class="os-stat" title="Forks"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M5 5.372v.878c0 .192.168.1.4.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v6.128A2.251 2.251 0 0 1 8 18.25h-.5a2.25 2.25 0 1 1-1.5 0H8a.75.75 0 0 0 .75-.75V8.25H7.25A2.25 2.25 0 0 1 5 6v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 12.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg><span data-forks></span></span>
+              </p>
             </div>
-          </li>
-        </ul>
+            <h3 class="card-title">EEG-DL</h3>
+            <p class="card-meta">Deep learning library for EEG classification</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://github.com/SuperBruceJia/EEG-Motor-Imagery-Classification-CNNs-TensorFlow">
+            <div class="card-media card-media--os card-media--github">
+              <span class="os-brand">GitHub</span>
+              <span class="os-name">EEG-MI CNNs</span>
+              <p class="os-stats" data-github="SuperBruceJia/EEG-Motor-Imagery-Classification-CNNs-TensorFlow" hidden>
+                <span class="os-stat" title="Stars"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z"/></svg><span data-stars></span></span>
+                <span class="os-stat" title="Forks"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M5 5.372v.878c0 .192.168.1.4.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v6.128A2.251 2.251 0 0 1 8 18.25h-.5a2.25 2.25 0 1 1-1.5 0H8a.75.75 0 0 0 .75-.75V8.25H7.25A2.25 2.25 0 0 1 5 6v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 12.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg><span data-forks></span></span>
+              </p>
+            </div>
+            <h3 class="card-title">EEG motor imagery CNNs</h3>
+            <p class="card-meta">TensorFlow · motor imagery classification</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://github.com/SuperBruceJia/NLNet-IQA">
+            <div class="card-media card-media--os card-media--github">
+              <span class="os-brand">GitHub</span>
+              <span class="os-name">NLNet-IQA</span>
+              <p class="os-stats" data-github="SuperBruceJia/NLNet-IQA" hidden>
+                <span class="os-stat" title="Stars"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z"/></svg><span data-stars></span></span>
+                <span class="os-stat" title="Forks"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M5 5.372v.878c0 .192.168.1.4.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v6.128A2.251 2.251 0 0 1 8 18.25h-.5a2.25 2.25 0 1 1-1.5 0H8a.75.75 0 0 0 .75-.75V8.25H7.25A2.25 2.25 0 0 1 5 6v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 12.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg><span data-forks></span></span>
+              </p>
+            </div>
+            <h3 class="card-title">NLNet-IQA</h3>
+            <p class="card-meta">Non-local modeling for image quality assessment</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://github.com/SuperBruceJia/MedicalNER">
+            <div class="card-media card-media--os card-media--github">
+              <span class="os-brand">GitHub</span>
+              <span class="os-name">MedicalNER</span>
+              <p class="os-stats" data-github="SuperBruceJia/MedicalNER" hidden>
+                <span class="os-stat" title="Stars"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z"/></svg><span data-stars></span></span>
+                <span class="os-stat" title="Forks"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M5 5.372v.878c0 .192.168.1.4.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v6.128A2.251 2.251 0 0 1 8 18.25h-.5a2.25 2.25 0 1 1-1.5 0H8a.75.75 0 0 0 .75-.75V8.25H7.25A2.25 2.25 0 0 1 5 6v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 12.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg><span data-forks></span></span>
+              </p>
+            </div>
+            <h3 class="card-title">MedicalNER</h3>
+            <p class="card-meta">BiLSTM models for medical named entity recognition</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://github.com/SuperBruceJia/Medical-Concept-Mapping">
+            <div class="card-media card-media--os card-media--github">
+              <span class="os-brand">GitHub</span>
+              <span class="os-name">Concept Mapping</span>
+              <p class="os-stats" data-github="SuperBruceJia/Medical-Concept-Mapping" hidden>
+                <span class="os-stat" title="Stars"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z"/></svg><span data-stars></span></span>
+                <span class="os-stat" title="Forks"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M5 5.372v.878c0 .192.168.1.4.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v6.128A2.251 2.251 0 0 1 8 18.25h-.5a2.25 2.25 0 1 1-1.5 0H8a.75.75 0 0 0 .75-.75V8.25H7.25A2.25 2.25 0 0 1 5 6v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 12.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg><span data-forks></span></span>
+              </p>
+            </div>
+            <h3 class="card-title">Medical Concept Mapping</h3>
+            <p class="card-meta">Mapping clinical concepts across vocabularies</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://github.com/SuperBruceJia/Sonar-Image-Segmentation-through-Entropy-Method">
+            <div class="card-media card-media--os card-media--github">
+              <span class="os-brand">GitHub</span>
+              <span class="os-name">Image Seg.</span>
+              <p class="os-stats" data-github="SuperBruceJia/Sonar-Image-Segmentation-through-Entropy-Method" hidden>
+                <span class="os-stat" title="Stars"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z"/></svg><span data-stars></span></span>
+                <span class="os-stat" title="Forks"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M5 5.372v.878c0 .192.168.1.4.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v6.128A2.251 2.251 0 0 1 8 18.25h-.5a2.25 2.25 0 1 1-1.5 0H8a.75.75 0 0 0 .75-.75V8.25H7.25A2.25 2.25 0 0 1 5 6v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 12.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg><span data-forks></span></span>
+              </p>
+            </div>
+            <h3 class="card-title">Sonar image segmentation</h3>
+            <p class="card-meta">Entropy-based sonar image segmentation</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://github.com/SuperBruceJia/Sci-Hub-Paper-Download-shell">
+            <div class="card-media card-media--os card-media--github">
+              <span class="os-brand">GitHub</span>
+              <span class="os-name">Sci-Hub Shell</span>
+              <p class="os-stats" data-github="SuperBruceJia/Sci-Hub-Paper-Download-shell" hidden>
+                <span class="os-stat" title="Stars"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z"/></svg><span data-stars></span></span>
+                <span class="os-stat" title="Forks"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M5 5.372v.878c0 .192.168.1.4.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v6.128A2.251 2.251 0 0 1 8 18.25h-.5a2.25 2.25 0 1 1-1.5 0H8a.75.75 0 0 0 .75-.75V8.25H7.25A2.25 2.25 0 0 1 5 6v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 12.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg><span data-forks></span></span>
+              </p>
+            </div>
+            <h3 class="card-title">Sci-Hub paper download shell</h3>
+            <p class="card-meta">Shell scripts for paper downloading</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="block reveal">
+        <span class="block-label">(4.2) Models &amp; data</span>
+        <div class="rail rail--featured" tabindex="0" aria-label="Models and datasets">
+          <a class="card-item card-item--figure" href="https://huggingface.co/collections/vkola-lab/podgpt">
+            <div class="card-media card-media--os card-media--hf">
+              <span class="os-brand">Hugging Face</span>
+              <span class="os-name">PodGPT models</span>
+            </div>
+            <h3 class="card-title">PodGPT collection</h3>
+            <p class="card-meta">vkola-lab · models &amp; checkpoints</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://huggingface.co/collections/shuyuej/quantization">
+            <div class="card-media card-media--os card-media--hf">
+              <span class="os-brand">Hugging Face</span>
+              <span class="os-name">Quantization</span>
+            </div>
+            <h3 class="card-title">Quantization collection</h3>
+            <p class="card-meta">shuyuej · quantized models</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://hub.docker.com/r/shuyuej/ner-pytorch-model">
+            <div class="card-media card-media--os card-media--docker">
+              <span class="os-brand">Docker</span>
+              <span class="os-name">NER PyTorch</span>
+            </div>
+            <h3 class="card-title">ner-pytorch-model</h3>
+            <p class="card-meta">shuyuej · Docker Hub medical NER image</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://huggingface.co/collections/vkola-lab/agentic-medical-rag-database">
+            <div class="card-media card-media--os card-media--hf">
+              <span class="os-brand">Hugging Face</span>
+              <span class="os-name">Agentic RAG</span>
+            </div>
+            <h3 class="card-title">Agentic Medical RAG database</h3>
+            <p class="card-meta">vkola-lab · retrieval database collection</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://huggingface.co/datasets/shuyuej/CC-BY-STEMM-Podcast-Transcripts-2048">
+            <div class="card-media card-media--os card-media--hf">
+              <span class="os-brand">Hugging Face</span>
+              <span class="os-name">STEMM 2048</span>
+            </div>
+            <h3 class="card-title">CC-BY STEMM podcast transcripts</h3>
+            <p class="card-meta">shuyuej · dataset · 2048 context</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://huggingface.co/datasets/shuyuej/CC-Podcasts">
+            <div class="card-media card-media--os card-media--hf">
+              <span class="os-brand">Hugging Face</span>
+              <span class="os-name">CC-Podcasts</span>
+            </div>
+            <h3 class="card-title">CC-Podcasts</h3>
+            <p class="card-meta">shuyuej · Creative Commons podcast dataset</p>
+          </a>
+          <a class="card-item card-item--figure" href="https://huggingface.co/datasets/shuyuej/Multilingual-Pretraining-Dataset">
+            <div class="card-media card-media--os card-media--hf">
+              <span class="os-brand">Hugging Face</span>
+              <span class="os-name">Multilingual</span>
+            </div>
+            <h3 class="card-title">Multilingual Pretraining Dataset</h3>
+            <p class="card-meta">shuyuej · multilingual pretraining data</p>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- 4 Beyond -->
-    <section class="pillar" id="beyond" data-pillar="4">
+    <!-- 5 Beyond -->
+    <section class="pillar" id="beyond" data-pillar="5">
       <div class="pillar-banner">
         <div>
-          <h2>(4) Beyond the lab</h2>
+          <h2>(5) Beyond the lab</h2>
           <p>Teaching, service, athletics, and photography — the practice outside the model.</p>
         </div>
         <a class="know-more" href="./photography.html">Photography →</a>
       </div>
 
       <div class="block reveal">
-        <span class="block-label">(4.1) Teaching &amp; service</span>
+        <span class="block-label">(5.1) Teaching &amp; service</span>
         <p class="section-lead"><strong>Teaching assistant</strong></p>
         <ul class="award-list">
           <li>
@@ -505,7 +662,7 @@
       </div>
 
       <div class="block reveal">
-        <span class="block-label">(4.2) Awards &amp; athletics</span>
+        <span class="block-label">(5.2) Awards &amp; athletics</span>
         <ul class="award-list">
           <li>
             <span class="year">2025</span>
@@ -543,7 +700,7 @@
       </div>
 
       <div class="block reveal">
-        <span class="block-label">(4.3) Team</span>
+        <span class="block-label">(5.3) Team</span>
         <div class="rail rail--team">
           <div class="card-item">
             <div class="card-media card-media--full"><img src="./imgs/team/Research_at_BU_2024_Winter_1.jpg" alt="Research team Winter 2024"></div>
@@ -589,6 +746,6 @@
     </footer>
   </main>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>
