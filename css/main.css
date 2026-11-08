@@ -27,6 +27,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Make default 100% zoom read closer to ~125% browser zoom */
+  font-size: 125%;
 }
 
 body {
@@ -35,7 +37,7 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: var(--font-body);
-  font-size: clamp(19px, 0.55vw + 17px, 22px);
+  font-size: clamp(22px, 0.7vw + 20px, 26px);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -365,7 +367,7 @@ body.menu-open .site-menu {
 .pillar-banner p {
   margin: 0;
   max-width: 62ch;
-  font-size: clamp(1.05rem, 0.45vw + 0.95rem, 1.28rem);
+  font-size: clamp(1.02rem, 0.35vw + 0.95rem, 1.2rem);
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.92);
 }
@@ -648,6 +650,11 @@ body.menu-open .site-menu {
   max-width: 980px;
 }
 
+.news-list {
+  max-width: none;
+  width: 100%;
+}
+
 .news-list li {
   display: grid;
   grid-template-columns: 110px 110px 1fr;
@@ -909,7 +916,7 @@ body.menu-open .site-menu {
 }
 
 .split-two > div > p {
-  font-size: clamp(1.05rem, 0.35vw + 0.95rem, 1.22rem);
+  font-size: clamp(1.02rem, 0.3vw + 0.95rem, 1.18rem);
   line-height: 1.65;
   max-width: 48ch;
 }
