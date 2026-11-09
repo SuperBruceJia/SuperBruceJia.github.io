@@ -560,11 +560,20 @@ body.menu-open .site-menu {
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
 .rail--media .card-item {
   width: 240px;
-  min-width: 240px;
+  min-width: 0;
+  max-width: 240px;
+  box-sizing: border-box;
+}
+
+.rail--media .card-title,
+.rail--media .card-meta {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .card-media--logo {
@@ -1398,6 +1407,16 @@ body.menu-open .site-menu {
   .rail--featured .card-item--figure .card-media {
     height: auto;
     aspect-ratio: 4 / 3;
+  }
+
+  .rail--media {
+    grid-auto-columns: minmax(220px, 78vw);
+  }
+
+  .rail--media .card-item {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .rail--wide {
