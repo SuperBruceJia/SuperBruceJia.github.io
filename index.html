@@ -10,16 +10,40 @@
   <meta name="google-site-verification" content="UZ7grdeibwJYn35EsW-Yp0Ky7_vuMG45bHI1kki15H0"/>
   <meta name="baidu-site-verification" content="WJpwHTPWUq"/>
   <link rel="shortcut icon" href="bu.ico">
-  <link rel="stylesheet" href="css/main.css?v=101">
+  <link rel="stylesheet" href="css/main.css?v=105">
+  <script>
+    (() => {
+      try {
+        const theme = localStorage.getItem("theme");
+        document.documentElement.setAttribute(
+          "data-theme",
+          theme === "dark" ? "dark" : "light"
+        );
+      } catch (_) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
 </head>
 <body>
   <a class="sr-only" href="#main">Skip to content</a>
 
   <header class="site-header">
     <a class="site-brand" href="#">Shuyue Jia</a>
-    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-      <span></span>
-    </button>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch to dark background">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 2.8v2.2M12 19v2.2M2.8 12h2.2M19 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M5.4 18.6l1.6-1.6M17 7l1.6-1.6"/>
+        </svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.2A7.4 7.4 0 0 1 9.8 4.5 7.6 7.6 0 1 0 19.5 14.2z"/>
+        </svg>
+      </button>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
   </header>
 
   <div class="site-menu" id="site-menu" aria-hidden="true">
@@ -787,6 +811,6 @@
     </footer>
   </main>
 
-  <script src="js/main.js?v=2"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>

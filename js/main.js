@@ -1,9 +1,36 @@
 (() => {
   const body = document.body;
+  const root = document.documentElement;
   const menuToggle = document.querySelector(".menu-toggle");
+  const themeToggle = document.querySelector(".theme-toggle");
   const menuLinks = document.querySelectorAll(".site-menu a[href^='#']");
   const markers = document.querySelectorAll(".marker");
   const siteMenu = document.getElementById("site-menu");
+
+  function getTheme() {
+    const theme = root.getAttribute("data-theme");
+    return theme === "dark" ? "dark" : "light";
+  }
+
+  function setTheme(theme) {
+    const next = theme === "dark" ? "dark" : "light";
+    root.setAttribute("data-theme", next);
+    try {
+      localStorage.setItem("theme", next);
+    } catch (_) {}
+    if (themeToggle) {
+      themeToggle.setAttribute(
+        "aria-label",
+        next === "dark" ? "Switch to light background" : "Switch to dark background"
+      );
+    }
+  }
+
+  setTheme(getTheme());
+
+  themeToggle?.addEventListener("click", () => {
+    setTheme(getTheme() === "light" ? "dark" : "light");
+  });
 
   function setMenuOpen(open) {
     body.classList.toggle("menu-open", open);
