@@ -775,7 +775,8 @@ html[data-theme="dark"] .card-media--logo {
   padding: 0;
   display: grid;
   gap: 14px;
-  max-width: 980px;
+  max-width: none;
+  width: 100%;
 }
 
 .news-list {
