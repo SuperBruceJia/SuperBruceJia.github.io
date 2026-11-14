@@ -678,6 +678,15 @@ html[data-theme="dark"] .card-media--logo {
   box-sizing: border-box;
 }
 
+.card-logo-wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  color: #171717;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
 .rail--affiliations {
   grid-auto-columns: minmax(260px, 320px);
   gap: 22px;
