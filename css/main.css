@@ -757,6 +757,16 @@ html[data-theme="dark"] .card-media--logo {
   transform-origin: center;
 }
 
+.logo-tile--mit {
+  padding: 22px 28px;
+}
+
+.logo-tile--mit img {
+  object-position: center;
+  transform: scale(0.82);
+  transform-origin: center;
+}
+
 .logo-tile--photo {
   padding: 0;
 }
