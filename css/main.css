@@ -419,8 +419,7 @@ html[data-theme="dark"] .hero {
 }
 
 .pillar-banner {
-  position: sticky;
-  top: var(--header-h);
+  position: relative;
   z-index: 40;
   display: flex;
   justify-content: space-between;
